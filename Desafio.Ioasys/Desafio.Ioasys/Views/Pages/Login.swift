@@ -12,66 +12,66 @@ struct Login: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var error: Bool = false
+    @State var loading: Bool = false
     
     var body: some View {
         NavigationView {
-            VStack {
-                ZStack {
-                    Image("background_login")
-                        .resizable()
-                        .scaledToFit()
-                    VStack(spacing: 14) {
-                        Image("logo_ioasys_symbol")
+            ProgressViewOverlay(isLoading: $loading) {
+                VStack {
+                    ZStack {
+                        Image("background_login")
                             .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50)
-                            .offset(y: keyboardResponder.currentHeight*0.17)
-                        if (keyboardResponder.currentHeight == 0) {
-                            Text("Seja bem vindo ao Empresas!")
-                                .foregroundColor(.white)
-                                .font(Font.custom("Rubik", size: 20))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
+                            .scaledToFit()
+                        VStack(spacing: 14) {
+                            Image("logo_ioasys_symbol")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 50, height: 50)
+                                .offset(y: keyboardResponder.currentHeight*0.17)
+                            if (keyboardResponder.currentHeight == 0) {
+                                Text("Seja bem vindo ao Empresas!")
+                                    .foregroundColor(.white)
+                                    .font(Font.custom("Rubik", size: 20))
+                                    .fontWeight(.regular)
+                                    .multilineTextAlignment(.center)
+                            }
+                        }
+                        .offset(y: 8)
+                    }
+                    .offset(y: -keyboardResponder.currentHeight*0.3)
+                    if (keyboardResponder.currentHeight == 0) {
+                        Spacer()
+                    }
+                    VStack(spacing: 24) {
+                        TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, isSecure: false, error: $error)
+                        TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, isSecure: true, error: $error)
+                        Button(action: {
+                            loading = true
+                            // Fazer requisição
+                        }) {
+                            HStack {
+                                Text("ENTRAR")
+                                    .font(Font.custom("Rubik", size: 16))
+                                    .fontWeight(.medium)
+                            }
+                            .padding(12)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .foregroundColor(.white)
+                            .background(Color("Pink 1"))
+                            .cornerRadius(6)
                         }
                     }
-                    .offset(y: 8)
-                }
-                .offset(y: -keyboardResponder.currentHeight*0.3)
-                if (keyboardResponder.currentHeight == 0) {
-                    Spacer()
-                }
-                VStack(spacing: 24) {
-                    TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, isSecure: false, error: $error)
-                    TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, isSecure: true, error: $error)
-                    Button(action: {
-                        error = true
-                    }) {
-                        HStack {
-                            Text("ENTRAR")
-                                .font(Font.custom("Rubik", size: 16))
-                                .fontWeight(.medium)
-                        }
-                        .padding(12)
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .foregroundColor(.white)
-                        .background(Color("Pink 1"))
-                        .cornerRadius(6)
+                    .offset(y: -keyboardResponder.currentHeight*0.2)
+                    .padding([.leading, .trailing])
+                    if (keyboardResponder.currentHeight == 0) {
+                        Spacer()
+                        Spacer()
                     }
-                }
-                .offset(y: -keyboardResponder.currentHeight*0.2)
-                .padding([.leading, .trailing])
-                if (keyboardResponder.currentHeight == 0) {
-                    Spacer()
-                    Spacer()
-                }
             }
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top])
+                .navigationBarHidden(true)
+                .edgesIgnoringSafeArea([.top])
+            }
         }
-    }
-    
-    private func endEditing() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
