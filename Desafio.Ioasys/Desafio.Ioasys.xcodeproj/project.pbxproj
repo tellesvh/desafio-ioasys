@@ -13,6 +13,7 @@
 		2325C9452524072B0058DD2A /* Desafio_IoasysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C9442524072B0058DD2A /* Desafio_IoasysTests.swift */; };
 		2325C9502524072B0058DD2A /* Desafio_IoasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C94F2524072B0058DD2A /* Desafio_IoasysUITests.swift */; };
 		2325C97125240C770058DD2A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C97025240C770058DD2A /* Login.swift */; };
+		23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EC82524C5FF00899706 /* KeyboardResponder.swift */; };
 		23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E5120525241EA5008815AD /* Launch Screen.storyboard */; };
 		23E5128225242AB7008815AD /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5128125242AB7008815AD /* background_splash.png */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		2325C94F2524072B0058DD2A /* Desafio_IoasysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_IoasysUITests.swift; sourceTree = "<group>"; };
 		2325C9512524072B0058DD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2325C97025240C770058DD2A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		23840EC82524C5FF00899706 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		23E5120525241EA5008815AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		23E5128125242AB7008815AD /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 			children = (
 				2325C932252407250058DD2A /* Desafio_IoasysApp.swift */,
 				2325C96C25240C340058DD2A /* Views */,
+				23840EBC2524C2AA00899706 /* Util */,
 				2325C936252407290058DD2A /* Assets.xcassets */,
 				23E5129225242B45008815AD /* Images */,
 				2325C93B252407290058DD2A /* Info.plist */,
@@ -142,6 +145,14 @@
 				23E5120525241EA5008815AD /* Launch Screen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		23840EBC2524C2AA00899706 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				23840EC82524C5FF00899706 /* KeyboardResponder.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		23E5129225242B45008815AD /* Images */ = {
@@ -285,6 +296,7 @@
 			files = (
 				2325C933252407250058DD2A /* Desafio_IoasysApp.swift in Sources */,
 				2325C97125240C770058DD2A /* Login.swift in Sources */,
+				23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
