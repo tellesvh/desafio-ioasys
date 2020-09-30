@@ -15,6 +15,8 @@
 		2325C97125240C770058DD2A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C97025240C770058DD2A /* Login.swift */; };
 		23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EC82524C5FF00899706 /* KeyboardResponder.swift */; };
 		23840ECE2524CD7200899706 /* EndEditingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840ECD2524CD7200899706 /* EndEditingBackground.swift */; };
+		23840EE22524D15D00899706 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */; };
+		23840EE32524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */; };
 		23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E5120525241EA5008815AD /* Launch Screen.storyboard */; };
 		23E5128225242AB7008815AD /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5128125242AB7008815AD /* background_splash.png */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		2325C97025240C770058DD2A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		23840EC82524C5FF00899706 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		23840ECD2524CD7200899706 /* EndEditingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndEditingBackground.swift; sourceTree = "<group>"; };
+		23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		23E5120525241EA5008815AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		23E5128125242AB7008815AD /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +87,8 @@
 		2325C926252407240058DD2A = {
 			isa = PBXGroup;
 			children = (
+				23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */,
+				23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */,
 				2325C931252407240058DD2A /* Desafio.Ioasys */,
 				2325C9432524072B0058DD2A /* Desafio.IoasysTests */,
 				2325C94E2524072B0058DD2A /* Desafio.IoasysUITests */,
@@ -280,7 +286,9 @@
 				23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */,
 				23E5128225242AB7008815AD /* background_splash.png in Resources */,
 				2325C93A252407290058DD2A /* Preview Assets.xcassets in Resources */,
+				23840EE32524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
 				2325C937252407290058DD2A /* Assets.xcassets in Resources */,
+				23840EE22524D15D00899706 /* Rubik-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

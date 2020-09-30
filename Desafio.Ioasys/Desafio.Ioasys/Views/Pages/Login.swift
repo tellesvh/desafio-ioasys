@@ -27,6 +27,10 @@ struct Login: View {
                                 .offset(y: keyboardResponder.currentHeight*0.18)
                             if (keyboardResponder.currentHeight == 0) {
                                 Text("Seja bem vindo ao Empresas!")
+                                    .foregroundColor(.white)
+                                    .font(Font.custom("Rubik", size: 20))
+                                    .fontWeight(.regular)
+                                    .multilineTextAlignment(.center)
                             }
                         }
                         .offset(y: 8)
