@@ -11,7 +11,7 @@ struct Login: View {
     @ObservedObject var keyboardResponder = KeyboardResponder()
     @State var email: String = ""
     @State var password: String = ""
-    @State var error: Bool = false
+    @State var error: String = ""
     @State var loading: Bool = false
     
     var body: some View {
@@ -42,11 +42,17 @@ struct Login: View {
                     if (keyboardResponder.currentHeight == 0) {
                         Spacer()
                     }
-                    VStack(spacing: 24) {
+                    VStack(alignment: .trailing, spacing: 24) {
                         TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, isSecure: false, error: $error)
                         TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, isSecure: true, error: $error)
+                        if (error.count > 0) {
+                            Text(error)
+                                .foregroundColor(Color("Error"))
+                                .font(Font.custom("Rubik", size: 12))
+                                .fontWeight(.regular)
+                        }
                         Button(action: {
-                            loading = true
+                            // error = error.count > 0 ? "" :  "erro"
                             // Fazer requisição
                         }) {
                             HStack {
@@ -81,7 +87,7 @@ struct TextFieldLabel: View {
     @State var placeholder: String
     @State var keyboardType: UIKeyboardType
     @State var isSecure: Bool
-    @Binding var error: Bool
+    @Binding var error: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -91,10 +97,10 @@ struct TextFieldLabel: View {
                 .fontWeight(.regular)
             if (!isSecure) {
                 TextField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, error: $error))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, error: .constant(error.count > 0)))
             } else {
                 SecureField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, error: $error))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, error: .constant(error.count > 0)))
             }
         }
     }
