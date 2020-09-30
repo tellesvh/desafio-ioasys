@@ -52,8 +52,7 @@ struct Login: View {
                                 .fontWeight(.regular)
                         }
                         Button(action: {
-                            // error = error.count > 0 ? "" :  "erro"
-                            // Fazer requisição
+                            logUserIn()
                         }) {
                             HStack {
                                 Text("ENTRAR")
@@ -79,6 +78,13 @@ struct Login: View {
             }
         }
     }
+    
+    func logUserIn() {
+        loading = true
+        // Fazer requisição
+        // error = error.count > 0 ? "" :  "erro"
+    }
+    
 }
 
 struct TextFieldLabel: View {

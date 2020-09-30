@@ -1,0 +1,6 @@
+framework module Pods_Desafio_Ioasys {
+  umbrella header "Pods-Desafio.Ioasys-umbrella.h"
+
+  export *
+  module * { export * }
+}

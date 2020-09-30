@@ -21,6 +21,9 @@
 		23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */; };
 		23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E5120525241EA5008815AD /* Launch Screen.storyboard */; };
 		23E5128225242AB7008815AD /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5128125242AB7008815AD /* background_splash.png */; };
+		25F8E48483C32E22C7044E45 /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338642BBE7F61C37964B9DFD /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */; };
+		40D56A4A41073FFC9636EA82 /* Pods_Desafio_IoasysTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C04469C1F4FFD3D4B6EE18 /* Pods_Desafio_IoasysTests.framework */; };
+		5A119C6446CFFB780820498B /* Pods_Desafio_Ioasys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C0F785166B002375757FA /* Pods_Desafio_Ioasys.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FD49033E4065A6D54BF8D8E /* Pods-Desafio.Ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio.Ioasys.release.xcconfig"; path = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys.release.xcconfig"; sourceTree = "<group>"; };
 		2325C92F252407240058DD2A /* Desafio.Ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.Ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2325C932252407250058DD2A /* Desafio_IoasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_IoasysApp.swift; sourceTree = "<group>"; };
 		2325C936252407290058DD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 		23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
 		23E5120525241EA5008815AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		23E5128125242AB7008815AD /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_splash.png; sourceTree = "<group>"; };
+		338642BBE7F61C37964B9DFD /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1D085E0BE4F1D816F06C40 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig"; path = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig"; sourceTree = "<group>"; };
+		753CA9C4DE6D54037AFA0BDD /* Pods-Desafio.IoasysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio.IoasysTests.release.xcconfig"; path = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C253207B9F0151CB230FBC1 /* Pods-Desafio.Ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio.Ioasys.debug.xcconfig"; path = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD66AA9073136D6B095D84C /* Pods-Desafio.IoasysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio.IoasysTests.debug.xcconfig"; path = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C46C0F785166B002375757FA /* Pods_Desafio_Ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_Ioasys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DB35F0985C9CA9097EC5C1 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig"; path = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C04469C1F4FFD3D4B6EE18 /* Pods_Desafio_IoasysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_IoasysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A119C6446CFFB780820498B /* Pods_Desafio_Ioasys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D56A4A41073FFC9636EA82 /* Pods_Desafio_IoasysTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F8E48483C32E22C7044E45 /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,8 @@
 				2325C9432524072B0058DD2A /* Desafio.IoasysTests */,
 				2325C94E2524072B0058DD2A /* Desafio.IoasysUITests */,
 				2325C930252407240058DD2A /* Products */,
+				8128A85E1F385248B643F324 /* Pods */,
+				C82C5CD7F14720E72C54D331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +128,7 @@
 		2325C931252407240058DD2A /* Desafio.Ioasys */ = {
 			isa = PBXGroup;
 			children = (
+				23277A3C25251B9B00EE05D1 /* Controllers */,
 				2325C932252407250058DD2A /* Desafio_IoasysApp.swift */,
 				2325C96C25240C340058DD2A /* Views */,
 				23840EBC2524C2AA00899706 /* Util */,
@@ -159,6 +177,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		23277A3C25251B9B00EE05D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		23840EBC2524C2AA00899706 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +219,30 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		8128A85E1F385248B643F324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C253207B9F0151CB230FBC1 /* Pods-Desafio.Ioasys.debug.xcconfig */,
+				1FD49033E4065A6D54BF8D8E /* Pods-Desafio.Ioasys.release.xcconfig */,
+				D0DB35F0985C9CA9097EC5C1 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */,
+				3C1D085E0BE4F1D816F06C40 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */,
+				BDD66AA9073136D6B095D84C /* Pods-Desafio.IoasysTests.debug.xcconfig */,
+				753CA9C4DE6D54037AFA0BDD /* Pods-Desafio.IoasysTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C82C5CD7F14720E72C54D331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C46C0F785166B002375757FA /* Pods_Desafio_Ioasys.framework */,
+				338642BBE7F61C37964B9DFD /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */,
+				E9C04469C1F4FFD3D4B6EE18 /* Pods_Desafio_IoasysTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2325C9542524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.Ioasys" */;
 			buildPhases = (
+				46A5C4F1265DC1DD8F7C69B0 /* [CP] Check Pods Manifest.lock */,
 				2325C92B252407240058DD2A /* Sources */,
 				2325C92C252407240058DD2A /* Frameworks */,
 				2325C92D252407240058DD2A /* Resources */,
@@ -218,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2325C9572524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.IoasysTests" */;
 			buildPhases = (
+				63E99FDB9A336C9A1E8776AA /* [CP] Check Pods Manifest.lock */,
 				2325C93C2524072A0058DD2A /* Sources */,
 				2325C93D2524072A0058DD2A /* Frameworks */,
 				2325C93E2524072A0058DD2A /* Resources */,
@@ -236,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2325C95A2524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.IoasysUITests" */;
 			buildPhases = (
+				5396422CF9721565C6CC30FD /* [CP] Check Pods Manifest.lock */,
 				2325C9472524072B0058DD2A /* Sources */,
 				2325C9482524072B0058DD2A /* Frameworks */,
 				2325C9492524072B0058DD2A /* Resources */,
@@ -321,6 +373,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46A5C4F1265DC1DD8F7C69B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desafio.Ioasys-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5396422CF9721565C6CC30FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desafio.Ioasys-Desafio.IoasysUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63E99FDB9A336C9A1E8776AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desafio.IoasysTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2325C92B252407240058DD2A /* Sources */ = {
@@ -486,6 +607,7 @@
 		};
 		2325C9552524072B0058DD2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C253207B9F0151CB230FBC1 /* Pods-Desafio.Ioasys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +630,7 @@
 		};
 		2325C9562524072B0058DD2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD49033E4065A6D54BF8D8E /* Pods-Desafio.Ioasys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -530,6 +653,7 @@
 		};
 		2325C9582524072B0058DD2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD66AA9073136D6B095D84C /* Pods-Desafio.IoasysTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +676,7 @@
 		};
 		2325C9592524072B0058DD2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753CA9C4DE6D54037AFA0BDD /* Pods-Desafio.IoasysTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +699,7 @@
 		};
 		2325C95B2524072B0058DD2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DB35F0985C9CA9097EC5C1 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +720,7 @@
 		};
 		2325C95C2524072B0058DD2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C1D085E0BE4F1D816F06C40 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
