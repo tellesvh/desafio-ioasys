@@ -87,8 +87,6 @@
 		2325C926252407240058DD2A = {
 			isa = PBXGroup;
 			children = (
-				23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */,
-				23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */,
 				2325C931252407240058DD2A /* Desafio.Ioasys */,
 				2325C9432524072B0058DD2A /* Desafio.IoasysTests */,
 				2325C94E2524072B0058DD2A /* Desafio.IoasysUITests */,
@@ -113,6 +111,7 @@
 				2325C96C25240C340058DD2A /* Views */,
 				23840EBC2524C2AA00899706 /* Util */,
 				2325C936252407290058DD2A /* Assets.xcassets */,
+				23840EE72524F97E00899706 /* Fonts */,
 				23E5129225242B45008815AD /* Images */,
 				2325C93B252407290058DD2A /* Info.plist */,
 				2325C938252407290058DD2A /* Preview Content */,
@@ -170,6 +169,15 @@
 				2325C97025240C770058DD2A /* Login.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		23840EE72524F97E00899706 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */,
+				23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		23E5129225242B45008815AD /* Images */ = {

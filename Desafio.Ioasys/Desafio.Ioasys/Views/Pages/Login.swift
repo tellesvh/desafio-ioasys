@@ -11,6 +11,7 @@ struct Login: View {
     @ObservedObject var keyboardResponder = KeyboardResponder()
     @State var email: String = ""
     @State var password: String = ""
+    @State var error: Bool = false
     
     var body: some View {
         NavigationView {
@@ -40,10 +41,10 @@ struct Login: View {
                     Spacer()
                 }
                 VStack(spacing: 24) {
-                    TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, isSecure: false)
-                    TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, isSecure: true)
+                    TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, isSecure: false, error: $error)
+                    TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, isSecure: true, error: $error)
                     Button(action: {
-                        print("Entrar.")
+                        error = true
                     }) {
                         HStack {
                             Text("ENTRAR")
@@ -80,6 +81,7 @@ struct TextFieldLabel: View {
     @State var placeholder: String
     @State var keyboardType: UIKeyboardType
     @State var isSecure: Bool
+    @Binding var error: Bool
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -89,10 +91,10 @@ struct TextFieldLabel: View {
                 .fontWeight(.regular)
             if (!isSecure) {
                 TextField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, error: $error))
             } else {
                 SecureField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, error: $error))
             }
         }
     }
@@ -100,6 +102,7 @@ struct TextFieldLabel: View {
 
 struct LoginTextFieldStyle: TextFieldStyle {
     @Binding var keyboardType: UIKeyboardType
+    @Binding var error: Bool
 
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
@@ -108,6 +111,7 @@ struct LoginTextFieldStyle: TextFieldStyle {
             .font(Font.custom("Rubik", size: 16))
             .background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color("Gray 1")))
             .foregroundColor(.black)
+            .if(error) { $0.overlay(RoundedRectangle(cornerRadius: 10).stroke(Color("Error"), lineWidth: 1)) }
     }
     
 }
@@ -115,5 +119,13 @@ struct LoginTextFieldStyle: TextFieldStyle {
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login()
+    }
+}
+
+
+extension View {
+    func `if`<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> TupleView<(Self?, Content?)> {
+        if conditional { return TupleView((nil, content(self))) }
+        else { return TupleView((self, nil)) }
     }
 }
