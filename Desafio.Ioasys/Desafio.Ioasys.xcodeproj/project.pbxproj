@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2325C933252407250058DD2A /* Desafio_IoasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C932252407250058DD2A /* Desafio_IoasysApp.swift */; };
+		2325C937252407290058DD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2325C936252407290058DD2A /* Assets.xcassets */; };
+		2325C93A252407290058DD2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2325C939252407290058DD2A /* Preview Assets.xcassets */; };
+		2325C9452524072B0058DD2A /* Desafio_IoasysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C9442524072B0058DD2A /* Desafio_IoasysTests.swift */; };
+		2325C9502524072B0058DD2A /* Desafio_IoasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C94F2524072B0058DD2A /* Desafio_IoasysUITests.swift */; };
+		2325C97125240C770058DD2A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C97025240C770058DD2A /* Login.swift */; };
+		23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E5120525241EA5008815AD /* Launch Screen.storyboard */; };
+		23E5128225242AB7008815AD /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5128125242AB7008815AD /* background_splash.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2325C9412524072A0058DD2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2325C927252407240058DD2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2325C92E252407240058DD2A;
+			remoteInfo = Desafio.Ioasys;
+		};
+		2325C94C2524072B0058DD2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2325C927252407240058DD2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2325C92E252407240058DD2A;
+			remoteInfo = Desafio.Ioasys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2325C92F252407240058DD2A /* Desafio.Ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.Ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2325C932252407250058DD2A /* Desafio_IoasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_IoasysApp.swift; sourceTree = "<group>"; };
+		2325C936252407290058DD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2325C939252407290058DD2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2325C93B252407290058DD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2325C9402524072A0058DD2A /* Desafio.IoasysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Desafio.IoasysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2325C9442524072B0058DD2A /* Desafio_IoasysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_IoasysTests.swift; sourceTree = "<group>"; };
+		2325C9462524072B0058DD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2325C94B2524072B0058DD2A /* Desafio.IoasysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Desafio.IoasysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2325C94F2524072B0058DD2A /* Desafio_IoasysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_IoasysUITests.swift; sourceTree = "<group>"; };
+		2325C9512524072B0058DD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2325C97025240C770058DD2A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		23E5120525241EA5008815AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		23E5128125242AB7008815AD /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_splash.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2325C92C252407240058DD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2325C93D2524072A0058DD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2325C9482524072B0058DD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2325C926252407240058DD2A = {
+			isa = PBXGroup;
+			children = (
+				2325C931252407240058DD2A /* Desafio.Ioasys */,
+				2325C9432524072B0058DD2A /* Desafio.IoasysTests */,
+				2325C94E2524072B0058DD2A /* Desafio.IoasysUITests */,
+				2325C930252407240058DD2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2325C930252407240058DD2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2325C92F252407240058DD2A /* Desafio.Ioasys.app */,
+				2325C9402524072A0058DD2A /* Desafio.IoasysTests.xctest */,
+				2325C94B2524072B0058DD2A /* Desafio.IoasysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2325C931252407240058DD2A /* Desafio.Ioasys */ = {
+			isa = PBXGroup;
+			children = (
+				2325C932252407250058DD2A /* Desafio_IoasysApp.swift */,
+				2325C96C25240C340058DD2A /* Views */,
+				2325C936252407290058DD2A /* Assets.xcassets */,
+				23E5129225242B45008815AD /* Images */,
+				2325C93B252407290058DD2A /* Info.plist */,
+				2325C938252407290058DD2A /* Preview Content */,
+			);
+			path = Desafio.Ioasys;
+			sourceTree = "<group>";
+		};
+		2325C938252407290058DD2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2325C939252407290058DD2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2325C9432524072B0058DD2A /* Desafio.IoasysTests */ = {
+			isa = PBXGroup;
+			children = (
+				2325C9442524072B0058DD2A /* Desafio_IoasysTests.swift */,
+				2325C9462524072B0058DD2A /* Info.plist */,
+			);
+			path = Desafio.IoasysTests;
+			sourceTree = "<group>";
+		};
+		2325C94E2524072B0058DD2A /* Desafio.IoasysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2325C94F2524072B0058DD2A /* Desafio_IoasysUITests.swift */,
+				2325C9512524072B0058DD2A /* Info.plist */,
+			);
+			path = Desafio.IoasysUITests;
+			sourceTree = "<group>";
+		};
+		2325C96C25240C340058DD2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2325C97025240C770058DD2A /* Login.swift */,
+				23E5120525241EA5008815AD /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23E5129225242B45008815AD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				23E5128125242AB7008815AD /* background_splash.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2325C92E252407240058DD2A /* Desafio.Ioasys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2325C9542524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.Ioasys" */;
+			buildPhases = (
+				2325C92B252407240058DD2A /* Sources */,
+				2325C92C252407240058DD2A /* Frameworks */,
+				2325C92D252407240058DD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Desafio.Ioasys;
+			productName = Desafio.Ioasys;
+			productReference = 2325C92F252407240058DD2A /* Desafio.Ioasys.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2325C93F2524072A0058DD2A /* Desafio.IoasysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2325C9572524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.IoasysTests" */;
+			buildPhases = (
+				2325C93C2524072A0058DD2A /* Sources */,
+				2325C93D2524072A0058DD2A /* Frameworks */,
+				2325C93E2524072A0058DD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2325C9422524072A0058DD2A /* PBXTargetDependency */,
+			);
+			name = Desafio.IoasysTests;
+			productName = Desafio.IoasysTests;
+			productReference = 2325C9402524072A0058DD2A /* Desafio.IoasysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2325C94A2524072B0058DD2A /* Desafio.IoasysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2325C95A2524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.IoasysUITests" */;
+			buildPhases = (
+				2325C9472524072B0058DD2A /* Sources */,
+				2325C9482524072B0058DD2A /* Frameworks */,
+				2325C9492524072B0058DD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2325C94D2524072B0058DD2A /* PBXTargetDependency */,
+			);
+			name = Desafio.IoasysUITests;
+			productName = Desafio.IoasysUITests;
+			productReference = 2325C94B2524072B0058DD2A /* Desafio.IoasysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2325C927252407240058DD2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2325C92E252407240058DD2A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					2325C93F2524072A0058DD2A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 2325C92E252407240058DD2A;
+					};
+					2325C94A2524072B0058DD2A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 2325C92E252407240058DD2A;
+					};
+				};
+			};
+			buildConfigurationList = 2325C92A252407240058DD2A /* Build configuration list for PBXProject "Desafio.Ioasys" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = "pt-BR";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 2325C926252407240058DD2A;
+			productRefGroup = 2325C930252407240058DD2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2325C92E252407240058DD2A /* Desafio.Ioasys */,
+				2325C93F2524072A0058DD2A /* Desafio.IoasysTests */,
+				2325C94A2524072B0058DD2A /* Desafio.IoasysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2325C92D252407240058DD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */,
+				23E5128225242AB7008815AD /* background_splash.png in Resources */,
+				2325C93A252407290058DD2A /* Preview Assets.xcassets in Resources */,
+				2325C937252407290058DD2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2325C93E2524072A0058DD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2325C9492524072B0058DD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2325C92B252407240058DD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2325C933252407250058DD2A /* Desafio_IoasysApp.swift in Sources */,
+				2325C97125240C770058DD2A /* Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2325C93C2524072A0058DD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2325C9452524072B0058DD2A /* Desafio_IoasysTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2325C9472524072B0058DD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2325C9502524072B0058DD2A /* Desafio_IoasysUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2325C9422524072A0058DD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2325C92E252407240058DD2A /* Desafio.Ioasys */;
+			targetProxy = 2325C9412524072A0058DD2A /* PBXContainerItemProxy */;
+		};
+		2325C94D2524072B0058DD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2325C92E252407240058DD2A /* Desafio.Ioasys */;
+			targetProxy = 2325C94C2524072B0058DD2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2325C9522524072B0058DD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2325C9532524072B0058DD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2325C9552524072B0058DD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Desafio.Ioasys/Preview Content\"";
+				DEVELOPMENT_TEAM = 9LSYV88F25;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Desafio.Ioasys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tellesvh.Desafio-Ioasys";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2325C9562524072B0058DD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Desafio.Ioasys/Preview Content\"";
+				DEVELOPMENT_TEAM = 9LSYV88F25;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Desafio.Ioasys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tellesvh.Desafio-Ioasys";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2325C9582524072B0058DD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LSYV88F25;
+				INFOPLIST_FILE = Desafio.IoasysTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tellesvh.Desafio-IoasysTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desafio.Ioasys.app/Desafio.Ioasys";
+			};
+			name = Debug;
+		};
+		2325C9592524072B0058DD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LSYV88F25;
+				INFOPLIST_FILE = Desafio.IoasysTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tellesvh.Desafio-IoasysTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desafio.Ioasys.app/Desafio.Ioasys";
+			};
+			name = Release;
+		};
+		2325C95B2524072B0058DD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LSYV88F25;
+				INFOPLIST_FILE = Desafio.IoasysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tellesvh.Desafio-IoasysUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Desafio.Ioasys;
+			};
+			name = Debug;
+		};
+		2325C95C2524072B0058DD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LSYV88F25;
+				INFOPLIST_FILE = Desafio.IoasysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tellesvh.Desafio-IoasysUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Desafio.Ioasys;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2325C92A252407240058DD2A /* Build configuration list for PBXProject "Desafio.Ioasys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2325C9522524072B0058DD2A /* Debug */,
+				2325C9532524072B0058DD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2325C9542524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.Ioasys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2325C9552524072B0058DD2A /* Debug */,
+				2325C9562524072B0058DD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2325C9572524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.IoasysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2325C9582524072B0058DD2A /* Debug */,
+				2325C9592524072B0058DD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2325C95A2524072B0058DD2A /* Build configuration list for PBXNativeTarget "Desafio.IoasysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2325C95B2524072B0058DD2A /* Debug */,
+				2325C95C2524072B0058DD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2325C927252407240058DD2A /* Project object */;
+}
