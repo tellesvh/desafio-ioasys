@@ -12,7 +12,7 @@ struct Login: View {
     @State var email: String = ""
     
     var body: some View {
-        Background {
+        EndEditingBackground {
             NavigationView {
                 VStack {
                     ZStack {
@@ -56,24 +56,5 @@ struct Login: View {
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login()
-    }
-}
-
-
-
-
-
-
-struct Background<Content: View>: View {
-    private var content: Content
-
-    init(@ViewBuilder content: @escaping () -> Content) {
-        self.content = content()
-    }
-
-    var body: some View {
-        Color.white
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-        .overlay(content)
     }
 }
