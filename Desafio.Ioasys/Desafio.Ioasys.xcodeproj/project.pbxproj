@@ -128,8 +128,8 @@
 		2325C931252407240058DD2A /* Desafio.Ioasys */ = {
 			isa = PBXGroup;
 			children = (
-				23277A3C25251B9B00EE05D1 /* Controllers */,
 				2325C932252407250058DD2A /* Desafio_IoasysApp.swift */,
+				23277A3C25251B9B00EE05D1 /* Controllers */,
 				2325C96C25240C340058DD2A /* Views */,
 				23840EBC2524C2AA00899706 /* Util */,
 				2325C936252407290058DD2A /* Assets.xcassets */,
@@ -229,7 +229,6 @@
 				BDD66AA9073136D6B095D84C /* Pods-Desafio.IoasysTests.debug.xcconfig */,
 				753CA9C4DE6D54037AFA0BDD /* Pods-Desafio.IoasysTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
