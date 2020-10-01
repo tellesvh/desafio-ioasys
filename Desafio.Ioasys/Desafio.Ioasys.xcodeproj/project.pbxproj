@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		23840EE22524D15D00899706 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */; };
 		23840EE32524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */; };
 		23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */; };
+		23B56449252612BE00FB4645 /* HttpRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B56448252612BE00FB4645 /* HttpRequestPerformer.swift */; };
+		23B564512526182300FB4645 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B564502526182300FB4645 /* LoginController.swift */; };
+		23B5645A252618E600FB4645 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B56459252618E600FB4645 /* LoginResponse.swift */; };
 		23E5120625241EA5008815AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E5120525241EA5008815AD /* Launch Screen.storyboard */; };
 		23E5128225242AB7008815AD /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5128125242AB7008815AD /* background_splash.png */; };
 		25F8E48483C32E22C7044E45 /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338642BBE7F61C37964B9DFD /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */; };
@@ -63,6 +66,9 @@
 		23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
+		23B56448252612BE00FB4645 /* HttpRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestPerformer.swift; sourceTree = "<group>"; };
+		23B564502526182300FB4645 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		23B56459252618E600FB4645 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		23E5120525241EA5008815AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		23E5128125242AB7008815AD /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_splash.png; sourceTree = "<group>"; };
 		338642BBE7F61C37964B9DFD /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,8 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				2325C932252407250058DD2A /* Desafio_IoasysApp.swift */,
+				23B56458252618D700FB4645 /* Models */,
 				23277A3C25251B9B00EE05D1 /* Controllers */,
 				2325C96C25240C340058DD2A /* Views */,
+				23B564472526127700FB4645 /* Http */,
 				23840EBC2524C2AA00899706 /* Util */,
 				2325C936252407290058DD2A /* Assets.xcassets */,
 				23840EE72524F97E00899706 /* Fonts */,
@@ -180,6 +188,7 @@
 		23277A3C25251B9B00EE05D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				23B564502526182300FB4645 /* LoginController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,6 +218,22 @@
 				23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		23B564472526127700FB4645 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				23B56448252612BE00FB4645 /* HttpRequestPerformer.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		23B56458252618D700FB4645 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23B56459252618E600FB4645 /* LoginResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		23E5129225242B45008815AD /* Images */ = {
@@ -253,6 +278,7 @@
 				2325C92B252407240058DD2A /* Sources */,
 				2325C92C252407240058DD2A /* Frameworks */,
 				2325C92D252407240058DD2A /* Resources */,
+				ABC2F6304E5D62D367748DD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +316,7 @@
 				2325C9472524072B0058DD2A /* Sources */,
 				2325C9482524072B0058DD2A /* Frameworks */,
 				2325C9492524072B0058DD2A /* Resources */,
+				25CEE7AC5C58FFC560906E9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +401,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25CEE7AC5C58FFC560906E9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		46A5C4F1265DC1DD8F7C69B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +484,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ABC2F6304E5D62D367748DD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -449,8 +510,11 @@
 			files = (
 				23277A37252511E300EE05D1 /* ProgressViewOverlay.swift in Sources */,
 				23840ECE2524CD7200899706 /* EndEditingBackground.swift in Sources */,
+				23B5645A252618E600FB4645 /* LoginResponse.swift in Sources */,
 				2325C933252407250058DD2A /* Desafio_IoasysApp.swift in Sources */,
+				23B56449252612BE00FB4645 /* HttpRequestPerformer.swift in Sources */,
 				2325C97125240C770058DD2A /* Login.swift in Sources */,
+				23B564512526182300FB4645 /* LoginController.swift in Sources */,
 				23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */,
 				23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */,
 			);

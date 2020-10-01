@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Login: View {
+    @ObservedObject var loginController = LoginController()
     @ObservedObject var keyboardResponder = KeyboardResponder()
     @State var email: String = ""
     @State var password: String = ""
@@ -82,8 +83,19 @@ struct Login: View {
     
     func logUserIn() {
         loading = true
-        // Fazer requisição
-        // error = error.count > 0 ? "" :  "erro"
+        // TODO Fazer validação de email
+        loginController.logUserIn(email: email, password: password) {
+            (result: Result<LoginResponse, Error>) in
+            switch result{
+                case .success(let loginResponse):
+                    print(loginResponse)
+                    // TODO Enviar usuário para próxima página
+                case .failure(let error):
+                    print(error)
+                    // error = error.count > 0 ? "" :  "erro"
+            }
+            loading = false
+        }
     }
     
 }

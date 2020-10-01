@@ -7,57 +7,156 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		207B843A8382DF916C84294C7FC62941 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB86775D62D67F118A6AF31469283E00 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		241CB07D813CFB0CF12747DB7707FE38 /* Pods-Desafio.IoasysTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6455BD88D9AFCB9E02EDC20965163DE /* Pods-Desafio.IoasysTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D9305B6721A12245B4AE3136C35ED75 /* Pods-Desafio.Ioasys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0203B2A928D7C15739A992168FE5C1CC /* Pods-Desafio.Ioasys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CC9E372FF375DEF860483A57340C810 /* Pods-Desafio.Ioasys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 936282F9F67F51019B25725C5FB3FAE7 /* Pods-Desafio.Ioasys-dummy.m */; };
-		B19DD772309E8786523432B08E016D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C0B970DAF378B992DF30786F15765921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CAD132E2B315C55D32E87FBF0A069A48 /* Pods-Desafio.IoasysTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E2E50FC2A9C75D821677270911DC6A /* Pods-Desafio.IoasysTests-dummy.m */; };
-		DE898967117161AE86DB387AB55A4774 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B57377C62ED3EF30D8787B1D3F7467 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m */; };
-		E9BF95C79F23A31481E5EB0A2F2A11C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */; };
+		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */; };
+		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */; };
+		0DD5F291C13AD0678D2EBB1C658F5547 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FDD47EE0D9CFA95BF311D2AF8F5D0 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m */; };
+		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */; };
+		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */; };
+		1E74D4C0330D35AA94C6D9D7BE2BA6A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */; };
+		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */; };
+		241CB07D813CFB0CF12747DB7707FE38 /* Pods-Desafio.IoasysTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FED8F55D43529A01418459AD31B243 /* Pods-Desafio.IoasysTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */; };
+		2C7DD142850A70A901B6D8FE1DB2AE45 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEE4DA55A9AFFDDD8263CF169D5CDE9 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */; };
+		44DC358D3C9EA4AE1E1909DCBB11EA4D /* Pods-Desafio.Ioasys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0432030F70B00E71C40BF180D8D1EDBE /* Pods-Desafio.Ioasys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */; };
+		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */; };
+		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */; };
+		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */; };
+		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */; };
+		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */; };
+		686B952DF5B3658946E861B3FCE0AB29 /* Pods-Desafio.Ioasys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F31757B160EE2A25EE12619862A519E /* Pods-Desafio.Ioasys-dummy.m */; };
+		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */; };
+		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */; };
+		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */; };
+		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */; };
+		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */; };
+		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */; };
+		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
+		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
+		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
+		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */; };
+		B9A86260FCB3E9846D7078661251D6B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */; };
+		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */; };
+		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */; };
+		CAD132E2B315C55D32E87FBF0A069A48 /* Pods-Desafio.IoasysTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 599B7DCCE159622E0F0E0300AE564966 /* Pods-Desafio.IoasysTests-dummy.m */; };
+		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */; };
+		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */; };
+		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */; };
+		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */; };
+		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */; };
+		E9BF95C79F23A31481E5EB0A2F2A11C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */; };
+		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20097F794E1A1791AB97EBE230264E61 /* Validation.swift */; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07C69B953281DD6F56F7FBCCE2E5EB1D /* PBXContainerItemProxy */ = {
+		064E01A88C230F190583094FF8CEA3DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 520CE3409FF5A227322B30A8B1C1B54F;
 			remoteInfo = "Pods-Desafio.Ioasys";
 		};
+		381CFC7DED0D55AD3940A5C449654FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		D997F3A824119068C8B77AF8AF8FFA5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0203B2A928D7C15739A992168FE5C1CC /* Pods-Desafio.Ioasys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio.Ioasys-umbrella.h"; sourceTree = "<group>"; };
-		0ABF576451A74C66674A452ADE10C603 /* Pods-Desafio.Ioasys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio.Ioasys.modulemap"; sourceTree = "<group>"; };
+		0432030F70B00E71C40BF180D8D1EDBE /* Pods-Desafio.Ioasys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio.Ioasys-umbrella.h"; sourceTree = "<group>"; };
+		062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		0B1003D94DCA4DC1446B321E722FF240 /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10F5BA262FE26892E7DD9F81C7241B93 /* Pods-Desafio.IoasysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.IoasysTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		20097F794E1A1791AB97EBE230264E61 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2831654579AF91A8C5D04927890A4286 /* Pods-Desafio.Ioasys-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Desafio.Ioasys-frameworks.sh"; sourceTree = "<group>"; };
+		29DCC912341EBAEB5F634D0F9451AC3C /* Pods-Desafio.IoasysTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio.IoasysTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		34511FE1DBD82BF25CFD3C7E698582CF /* Pods-Desafio.Ioasys-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-acknowledgements.plist"; sourceTree = "<group>"; };
+		349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		39F3FC3558AAF8A04D27D63BF8F1F4DE /* Pods_Desafio_Ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desafio_Ioasys.framework; path = "Pods-Desafio.Ioasys.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4224E9D447B4BC09C22C185052033BF3 /* Pods-Desafio.Ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys.release.xcconfig"; sourceTree = "<group>"; };
-		4D1919615C95D46C6B79A937597A2CAD /* Pods-Desafio.Ioasys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-Info.plist"; sourceTree = "<group>"; };
-		58302FA48D0A9A1ABA5BB7A589CD9E42 /* Pods-Desafio.IoasysTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.IoasysTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5BD9C1AF0E4408C7C430ECB2EE328F63 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist"; sourceTree = "<group>"; };
-		6794330EB106563E2E2B431086F3961D /* Pods-Desafio.IoasysTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio.IoasysTests.modulemap"; sourceTree = "<group>"; };
-		7633D785E0AF46E4AB53CC65B3B2EC73 /* Pods-Desafio.Ioasys-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-acknowledgements.plist"; sourceTree = "<group>"; };
-		82094FF2B71DE232BD0EB0DFED9CFFA9 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		85B57377C62ED3EF30D8787B1D3F7467 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m"; sourceTree = "<group>"; };
-		85E2E50FC2A9C75D821677270911DC6A /* Pods-Desafio.IoasysTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio.IoasysTests-dummy.m"; sourceTree = "<group>"; };
-		936282F9F67F51019B25725C5FB3FAE7 /* Pods-Desafio.Ioasys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio.Ioasys-dummy.m"; sourceTree = "<group>"; };
-		9772FB7CC45C964C25BA575F736D9FB4 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9845FC93E5BDB120DB5BC7D928B7C2F7 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B1FDD47EE0D9CFA95BF311D2AF8F5D0 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m"; sourceTree = "<group>"; };
+		3FE7FFBBE5680E5496EBC625D8156B15 /* Pods-Desafio.IoasysTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio.IoasysTests.modulemap"; sourceTree = "<group>"; };
+		401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		49E2BF70EB92BEA5650AC83A1747C1CF /* Pods-Desafio.IoasysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.IoasysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4BBC02B7D9259273B30F390BC7CAA014 /* Pods-Desafio.Ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys.debug.xcconfig"; sourceTree = "<group>"; };
+		4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		4E69CCC36638E2F398842C6C20AE9571 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap"; sourceTree = "<group>"; };
+		51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		599B7DCCE159622E0F0E0300AE564966 /* Pods-Desafio.IoasysTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio.IoasysTests-dummy.m"; sourceTree = "<group>"; };
+		5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F70041FB6517AADCAE9AED0EBB70C06 /* Pods-Desafio.Ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys.release.xcconfig"; sourceTree = "<group>"; };
+		61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		629721E3F0EFBE0407784CB16AD87F08 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-frameworks.sh"; sourceTree = "<group>"; };
+		673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		7F31757B160EE2A25EE12619862A519E /* Pods-Desafio.Ioasys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio.Ioasys-dummy.m"; sourceTree = "<group>"; };
+		7FA8C53CEBB6CF96A29C126361557180 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		88FED8F55D43529A01418459AD31B243 /* Pods-Desafio.IoasysTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio.IoasysTests-umbrella.h"; sourceTree = "<group>"; };
+		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		944193FD3E91C76603F99B2CF0D5EA42 /* Pods-Desafio.IoasysTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.IoasysTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		96D5C72E4368CD85FD76444EAF7E85C8 /* Pods-Desafio.Ioasys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio.Ioasys.modulemap"; sourceTree = "<group>"; };
+		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EFD1AA2D05D3F785A7FDCA8FBEFE746 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A05C655DC31C1E96E5186132FF7E1E03 /* Pods-Desafio.IoasysTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.IoasysTests-Info.plist"; sourceTree = "<group>"; };
-		A6455BD88D9AFCB9E02EDC20965163DE /* Pods-Desafio.IoasysTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio.IoasysTests-umbrella.h"; sourceTree = "<group>"; };
-		A7124EED8025E6F425217977ED559DC3 /* Pods-Desafio.IoasysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.IoasysTests.release.xcconfig"; sourceTree = "<group>"; };
-		A7E25DD602309558A9234C84605828FC /* Pods-Desafio.Ioasys-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio.Ioasys-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA5F612B1ED4EEAC07F9662EC83C857F /* Pods-Desafio.IoasysTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio.IoasysTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BB86775D62D67F118A6AF31469283E00 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h"; sourceTree = "<group>"; };
-		D69E0167C06DA5DD90A6B98F01D98DBB /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap"; sourceTree = "<group>"; };
-		F6A0877ACC1F2489EF0A7943785E0D2F /* Pods-Desafio.Ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys.debug.xcconfig"; sourceTree = "<group>"; };
+		9DE4FBC2FDABBF022C6C3922FB5F7A50 /* Pods-Desafio.IoasysTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.IoasysTests-Info.plist"; sourceTree = "<group>"; };
+		9F039A99856C6765AC8E274430BA7758 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A00F03952D9D3E0245C029DBBB74B480 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist"; sourceTree = "<group>"; };
+		A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		B10A8BAEB23363B22E564CC59561A968 /* Pods-Desafio.Ioasys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio.Ioasys-Info.plist"; sourceTree = "<group>"; };
+		B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		B9A7E21472ED3A72F8F95A47868E1ABF /* Pods-Desafio.IoasysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.IoasysTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		BD87428CB699013B186265B89E4D0013 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BEEE4DA55A9AFFDDD8263CF169D5CDE9 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h"; sourceTree = "<group>"; };
+		CB358C962560444DBC06199E8DE72E8E /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D0BE1D98A24C32C98B5880DB1132BF1D /* Pods-Desafio.Ioasys-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio.Ioasys-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		FC97DA9DD4626011D23B1514F518F1C4 /* Pods_Desafio_IoasysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desafio_IoasysTests.framework; path = "Pods-Desafio.IoasysTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,60 +168,148 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A69229FEA9B634334F77E13BA82859A /* Frameworks */ = {
+		9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B970DAF378B992DF30786F15765921 /* Foundation.framework in Frameworks */,
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7FACC2A0F39796E4D6F36AF34C54081 /* Frameworks */ = {
+		B96F1708C081E7BDE09A6801E16CF69F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B19DD772309E8786523432B08E016D85 /* Foundation.framework in Frameworks */,
+				B9A86260FCB3E9846D7078661251D6B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E919C71221AFA86532E0B8ADD50B5527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E74D4C0330D35AA94C6D9D7BE2BA6A5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33C5530B4133388E1E3EF99FD77795DD /* Pods-Desafio.Ioasys-Desafio.IoasysUITests */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D69E0167C06DA5DD90A6B98F01D98DBB /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap */,
-				9772FB7CC45C964C25BA575F736D9FB4 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.markdown */,
-				82094FF2B71DE232BD0EB0DFED9CFFA9 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.plist */,
-				85B57377C62ED3EF30D8787B1D3F7467 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m */,
-				5BD9C1AF0E4408C7C430ECB2EE328F63 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist */,
-				BB86775D62D67F118A6AF31469283E00 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h */,
-				9845FC93E5BDB120DB5BC7D928B7C2F7 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */,
-				9EFD1AA2D05D3F785A7FDCA8FBEFE746 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */,
+				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D9174289684CBAC539B7DE13894FE36 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E69CCC36638E2F398842C6C20AE9571 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap */,
+				BD87428CB699013B186265B89E4D0013 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.markdown */,
+				9F039A99856C6765AC8E274430BA7758 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-acknowledgements.plist */,
+				3B1FDD47EE0D9CFA95BF311D2AF8F5D0 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m */,
+				629721E3F0EFBE0407784CB16AD87F08 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-frameworks.sh */,
+				A00F03952D9D3E0245C029DBBB74B480 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist */,
+				BEEE4DA55A9AFFDDD8263CF169D5CDE9 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h */,
+				7FA8C53CEBB6CF96A29C126361557180 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */,
+				CB358C962560444DBC06199E8DE72E8E /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */,
 			);
 			name = "Pods-Desafio.Ioasys-Desafio.IoasysUITests";
 			path = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests";
 			sourceTree = "<group>";
 		};
-		3CEB8BC6B6679752B79D494875528A65 /* Pods-Desafio.IoasysTests */ = {
+		4F276D9AD5BE1108A80070F619693C64 /* Pods-Desafio.IoasysTests */ = {
 			isa = PBXGroup;
 			children = (
-				6794330EB106563E2E2B431086F3961D /* Pods-Desafio.IoasysTests.modulemap */,
-				BA5F612B1ED4EEAC07F9662EC83C857F /* Pods-Desafio.IoasysTests-acknowledgements.markdown */,
-				58302FA48D0A9A1ABA5BB7A589CD9E42 /* Pods-Desafio.IoasysTests-acknowledgements.plist */,
-				85E2E50FC2A9C75D821677270911DC6A /* Pods-Desafio.IoasysTests-dummy.m */,
-				A05C655DC31C1E96E5186132FF7E1E03 /* Pods-Desafio.IoasysTests-Info.plist */,
-				A6455BD88D9AFCB9E02EDC20965163DE /* Pods-Desafio.IoasysTests-umbrella.h */,
-				10F5BA262FE26892E7DD9F81C7241B93 /* Pods-Desafio.IoasysTests.debug.xcconfig */,
-				A7124EED8025E6F425217977ED559DC3 /* Pods-Desafio.IoasysTests.release.xcconfig */,
+				3FE7FFBBE5680E5496EBC625D8156B15 /* Pods-Desafio.IoasysTests.modulemap */,
+				29DCC912341EBAEB5F634D0F9451AC3C /* Pods-Desafio.IoasysTests-acknowledgements.markdown */,
+				944193FD3E91C76603F99B2CF0D5EA42 /* Pods-Desafio.IoasysTests-acknowledgements.plist */,
+				599B7DCCE159622E0F0E0300AE564966 /* Pods-Desafio.IoasysTests-dummy.m */,
+				9DE4FBC2FDABBF022C6C3922FB5F7A50 /* Pods-Desafio.IoasysTests-Info.plist */,
+				88FED8F55D43529A01418459AD31B243 /* Pods-Desafio.IoasysTests-umbrella.h */,
+				49E2BF70EB92BEA5650AC83A1747C1CF /* Pods-Desafio.IoasysTests.debug.xcconfig */,
+				B9A7E21472ED3A72F8F95A47868E1ABF /* Pods-Desafio.IoasysTests.release.xcconfig */,
 			);
 			name = "Pods-Desafio.IoasysTests";
 			path = "Target Support Files/Pods-Desafio.IoasysTests";
 			sourceTree = "<group>";
 		};
-		5D7D9F63943FEDA2CB9F5765F83985F9 /* Products */ = {
+		5A6F22EC0F5633257B85B6E660A2165F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */,
+				DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */,
+				F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */,
+				2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */,
+				845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */,
+				4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */,
+				A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		6FF97FACCA57A9A7BC9912B94BE14E47 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */,
+				5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */,
+				F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */,
+				B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */,
+				DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */,
+				B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */,
+				4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */,
+				0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */,
+				333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */,
+				4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */,
+				0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */,
+				51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */,
+				401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */,
+				29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */,
+				876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */,
+				D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */,
+				998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */,
+				51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */,
+				79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */,
+				84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */,
+				9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */,
+				B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */,
+				A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */,
+				7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */,
+				673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */,
+				9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */,
+				FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */,
+				4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */,
+				FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */,
+				5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */,
+				BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */,
+				61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */,
+				062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */,
+				970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */,
+				20097F794E1A1791AB97EBE230264E61 /* Validation.swift */,
+				5A6F22EC0F5633257B85B6E660A2165F /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		8FA51ED31D944A92D3F53A77F592B55B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5BAB4AC20601A24EE23DDB5035EDBDD /* Pods-Desafio.Ioasys */,
+				4F276D9AD5BE1108A80070F619693C64 /* Pods-Desafio.IoasysTests */,
+				4D9174289684CBAC539B7DE13894FE36 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9736E07774D718A0D3882642D6A3107A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
 				39F3FC3558AAF8A04D27D63BF8F1F4DE /* Pods_Desafio_Ioasys.framework */,
 				0B1003D94DCA4DC1446B321E722FF240 /* Pods_Desafio_Ioasys_Desafio_IoasysUITests.framework */,
 				FC97DA9DD4626011D23B1514F518F1C4 /* Pods_Desafio_IoasysTests.framework */,
@@ -130,66 +317,75 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF5173A2D1098A99F6EB46B188EBBE34 /* Pods-Desafio.Ioasys */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				0ABF576451A74C66674A452ADE10C603 /* Pods-Desafio.Ioasys.modulemap */,
-				A7E25DD602309558A9234C84605828FC /* Pods-Desafio.Ioasys-acknowledgements.markdown */,
-				7633D785E0AF46E4AB53CC65B3B2EC73 /* Pods-Desafio.Ioasys-acknowledgements.plist */,
-				936282F9F67F51019B25725C5FB3FAE7 /* Pods-Desafio.Ioasys-dummy.m */,
-				4D1919615C95D46C6B79A937597A2CAD /* Pods-Desafio.Ioasys-Info.plist */,
-				0203B2A928D7C15739A992168FE5C1CC /* Pods-Desafio.Ioasys-umbrella.h */,
-				F6A0877ACC1F2489EF0A7943785E0D2F /* Pods-Desafio.Ioasys.debug.xcconfig */,
-				4224E9D447B4BC09C22C185052033BF3 /* Pods-Desafio.Ioasys.release.xcconfig */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D6535AE6278B88B90F3A376D1347504F /* Pods */,
+				9736E07774D718A0D3882642D6A3107A /* Products */,
+				8FA51ED31D944A92D3F53A77F592B55B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D6535AE6278B88B90F3A376D1347504F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FF97FACCA57A9A7BC9912B94BE14E47 /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */,
+				222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E5BAB4AC20601A24EE23DDB5035EDBDD /* Pods-Desafio.Ioasys */ = {
+			isa = PBXGroup;
+			children = (
+				96D5C72E4368CD85FD76444EAF7E85C8 /* Pods-Desafio.Ioasys.modulemap */,
+				D0BE1D98A24C32C98B5880DB1132BF1D /* Pods-Desafio.Ioasys-acknowledgements.markdown */,
+				34511FE1DBD82BF25CFD3C7E698582CF /* Pods-Desafio.Ioasys-acknowledgements.plist */,
+				7F31757B160EE2A25EE12619862A519E /* Pods-Desafio.Ioasys-dummy.m */,
+				2831654579AF91A8C5D04927890A4286 /* Pods-Desafio.Ioasys-frameworks.sh */,
+				B10A8BAEB23363B22E564CC59561A968 /* Pods-Desafio.Ioasys-Info.plist */,
+				0432030F70B00E71C40BF180D8D1EDBE /* Pods-Desafio.Ioasys-umbrella.h */,
+				4BBC02B7D9259273B30F390BC7CAA014 /* Pods-Desafio.Ioasys.debug.xcconfig */,
+				5F70041FB6517AADCAE9AED0EBB70C06 /* Pods-Desafio.Ioasys.release.xcconfig */,
 			);
 			name = "Pods-Desafio.Ioasys";
 			path = "Target Support Files/Pods-Desafio.Ioasys";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CF1408CF629C7361332E53B88F7BD30C = {
-			isa = PBXGroup;
-			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				5D7D9F63943FEDA2CB9F5765F83985F9 /* Products */,
-				F4E71116258D882D6A173A0D44F633E6 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F4E71116258D882D6A173A0D44F633E6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BF5173A2D1098A99F6EB46B188EBBE34 /* Pods-Desafio.Ioasys */,
-				3CEB8BC6B6679752B79D494875528A65 /* Pods-Desafio.IoasysTests */,
-				33C5530B4133388E1E3EF99FD77795DD /* Pods-Desafio.Ioasys-Desafio.IoasysUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5F31C5BA62E5C65F1EB8A2F284AABBCD /* Headers */ = {
+		5C591BEBC2775FEFD643943D1FD2C47A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				207B843A8382DF916C84294C7FC62941 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h in Headers */,
+				44DC358D3C9EA4AE1E1909DCBB11EA4D /* Pods-Desafio.Ioasys-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C54527904AD317AD34A75B99E3BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7DD142850A70A901B6D8FE1DB2AE45 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8070B01910C64B9AFD0DB550EDE38D6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,14 +394,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				241CB07D813CFB0CF12747DB7707FE38 /* Pods-Desafio.IoasysTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3F6CB7BC45F662D8DDAEB29262352C0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9305B6721A12245B4AE3136C35ED75 /* Pods-Desafio.Ioasys-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +412,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D2BBD18ECB129D781FBA1A603F9CEC3A /* PBXTargetDependency */,
+				13EDB6751E57ECAB9670493F7FC7F300 /* PBXTargetDependency */,
 			);
 			name = "Pods-Desafio.IoasysTests";
 			productName = "Pods-Desafio.IoasysTests";
@@ -233,16 +421,17 @@
 		};
 		511A54DD6EEB5A916E91A3EC01A5A843 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D7E7878DA3E6C56FA57761652795E9F /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys-Desafio.IoasysUITests" */;
+			buildConfigurationList = DFD07977A80B754634881F65FA5FEF3F /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys-Desafio.IoasysUITests" */;
 			buildPhases = (
-				5F31C5BA62E5C65F1EB8A2F284AABBCD /* Headers */,
-				9685143FE865CBC6E191ACAE0ADA79D2 /* Sources */,
-				B7FACC2A0F39796E4D6F36AF34C54081 /* Frameworks */,
-				A9A1767FFD2998A19BE567ABDE100C49 /* Resources */,
+				651C54527904AD317AD34A75B99E3BF1 /* Headers */,
+				DB9E88545D6291B8F62E1B60AFA48B99 /* Sources */,
+				B96F1708C081E7BDE09A6801E16CF69F /* Frameworks */,
+				37A5900D4F822A694755C7CA03A28E3E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DBE87E97957512F0168E9D70B99CEDD5 /* PBXTargetDependency */,
 			);
 			name = "Pods-Desafio.Ioasys-Desafio.IoasysUITests";
 			productName = "Pods-Desafio.Ioasys-Desafio.IoasysUITests";
@@ -251,20 +440,39 @@
 		};
 		520CE3409FF5A227322B30A8B1C1B54F /* Pods-Desafio.Ioasys */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F1100772561F9E2C2663361E277A815 /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys" */;
+			buildConfigurationList = 68022FE3F884A37195F85C3305F0F98D /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys" */;
 			buildPhases = (
-				D3F6CB7BC45F662D8DDAEB29262352C0 /* Headers */,
-				DFD0230B7F9B87D564CC257A4BDA0D8B /* Sources */,
-				9A69229FEA9B634334F77E13BA82859A /* Frameworks */,
-				C86A9F52C4CEB9BD4F00EBF83F9F1CD7 /* Resources */,
+				5C591BEBC2775FEFD643943D1FD2C47A /* Headers */,
+				B9DBC095B87F18D00E5EF6264BB8DD4F /* Sources */,
+				E919C71221AFA86532E0B8ADD50B5527 /* Frameworks */,
+				B80705FA4FE8322F09A4CD5BB3E9315C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C14A998BA21BF58B067576DF38FC7619 /* PBXTargetDependency */,
+			);
+			name = "Pods-Desafio.Ioasys";
+			productName = "Pods-Desafio.Ioasys";
+			productReference = 39F3FC3558AAF8A04D27D63BF8F1F4DE /* Pods_Desafio_Ioasys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				8070B01910C64B9AFD0DB550EDE38D6B /* Headers */,
+				2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */,
+				9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */,
+				9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Desafio.Ioasys";
-			productName = "Pods-Desafio.Ioasys";
-			productReference = 39F3FC3558AAF8A04D27D63BF8F1F4DE /* Pods_Desafio_Ioasys.framework */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,10 +493,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5D7D9F63943FEDA2CB9F5765F83985F9 /* Products */;
+			productRefGroup = 9736E07774D718A0D3882642D6A3107A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				520CE3409FF5A227322B30A8B1C1B54F /* Pods-Desafio.Ioasys */,
 				511A54DD6EEB5A916E91A3EC01A5A843 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests */,
 				385FFC583130AD94D886454998CE0D35 /* Pods-Desafio.IoasysTests */,
@@ -297,6 +506,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		37A5900D4F822A694755C7CA03A28E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EE0A93FF13ABF04AC278C72D4EEBB22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,14 +527,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A1767FFD2998A19BE567ABDE100C49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C86A9F52C4CEB9BD4F00EBF83F9F1CD7 /* Resources */ = {
+		B80705FA4FE8322F09A4CD5BB3E9315C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,37 +545,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9685143FE865CBC6E191ACAE0ADA79D2 /* Sources */ = {
+		2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE898967117161AE86DB387AB55A4774 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m in Sources */,
+				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
+				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
+				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
+				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
+				ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */,
+				0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */,
+				27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */,
+				6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */,
+				91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */,
+				013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */,
+				45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */,
+				D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */,
+				19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */,
+				8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */,
+				0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */,
+				4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */,
+				D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */,
+				218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */,
+				666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */,
+				EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */,
+				6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */,
+				6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */,
+				C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */,
+				911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */,
+				66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */,
+				9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */,
+				47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */,
+				6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */,
+				381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */,
+				212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */,
+				9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */,
+				D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */,
+				F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFD0230B7F9B87D564CC257A4BDA0D8B /* Sources */ = {
+		B9DBC095B87F18D00E5EF6264BB8DD4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CC9E372FF375DEF860483A57340C810 /* Pods-Desafio.Ioasys-dummy.m in Sources */,
+				686B952DF5B3658946E861B3FCE0AB29 /* Pods-Desafio.Ioasys-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9E88545D6291B8F62E1B60AFA48B99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD5F291C13AD0678D2EBB1C658F5547 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2BBD18ECB129D781FBA1A603F9CEC3A /* PBXTargetDependency */ = {
+		13EDB6751E57ECAB9670493F7FC7F300 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Desafio.Ioasys";
 			target = 520CE3409FF5A227322B30A8B1C1B54F /* Pods-Desafio.Ioasys */;
-			targetProxy = 07C69B953281DD6F56F7FBCCE2E5EB1D /* PBXContainerItemProxy */;
+			targetProxy = 064E01A88C230F190583094FF8CEA3DE /* PBXContainerItemProxy */;
+		};
+		C14A998BA21BF58B067576DF38FC7619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = D997F3A824119068C8B77AF8AF8FFA5F /* PBXContainerItemProxy */;
+		};
+		DBE87E97957512F0168E9D70B99CEDD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 381CFC7DED0D55AD3940A5C449654FE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25F215E2318C253F5D7182C81A90E251 /* Debug */ = {
+		246267A264ABC45E1530A4C23196BDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6A0877ACC1F2489EF0A7943785E0D2F /* Pods-Desafio.Ioasys.debug.xcconfig */;
+			baseConfigurationReference = 5F70041FB6517AADCAE9AED0EBB70C06 /* Pods-Desafio.Ioasys.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -382,6 +653,82 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48FD2B4E815CEB933B18D313E9E9EF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FEB957F1CC4C1DCBDCD3400589D1290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA8C53CEBB6CF96A29C126361557180 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -459,9 +806,9 @@
 			};
 			name = Debug;
 		};
-		9528A64DF0329152C43AB6402EBE441B /* Debug */ = {
+		94A81176BA7B14F28303464A8E17DC9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9845FC93E5BDB120DB5BC7D928B7C2F7 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.debug.xcconfig */;
+			baseConfigurationReference = 4BBC02B7D9259273B30F390BC7CAA014 /* Pods-Desafio.Ioasys.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -474,7 +821,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,7 +830,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.Ioasys-Desafio.IoasysUITests/Pods-Desafio.Ioasys-Desafio.IoasysUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -557,9 +904,122 @@
 			};
 			name = Release;
 		};
-		BA2E99E4610E9ECE232409EFADF8F085 /* Release */ = {
+		E414A402CB5A8366AF715275672D8695 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EFD1AA2D05D3F785A7FDCA8FBEFE746 /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */;
+			baseConfigurationReference = B9A7E21472ED3A72F8F95A47868E1ABF /* Pods-Desafio.IoasysTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E73BFB7433831CF292FADF6B2CB7AC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E75579C960764CB55C450A2720DE45F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E2BF70EB92BEA5650AC83A1747C1CF /* Pods-Desafio.IoasysTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2EA7A3A38EF5DCDFEA2EC98A788B754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB358C962560444DBC06199E8DE72E8E /* Pods-Desafio.Ioasys-Desafio.IoasysUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -596,134 +1056,9 @@
 			};
 			name = Release;
 		};
-		E414A402CB5A8366AF715275672D8695 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7124EED8025E6F425217977ED559DC3 /* Pods-Desafio.IoasysTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E75579C960764CB55C450A2720DE45F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10F5BA262FE26892E7DD9F81C7241B93 /* Pods-Desafio.IoasysTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.IoasysTests/Pods-Desafio.IoasysTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E890CABB0EF7031EBABB01E43902A745 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4224E9D447B4BC09C22C185052033BF3 /* Pods-Desafio.Ioasys.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio.Ioasys/Pods-Desafio.Ioasys.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D7E7878DA3E6C56FA57761652795E9F /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys-Desafio.IoasysUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9528A64DF0329152C43AB6402EBE441B /* Debug */,
-				BA2E99E4610E9ECE232409EFADF8F085 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -733,11 +1068,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F1100772561F9E2C2663361E277A815 /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys" */ = {
+		68022FE3F884A37195F85C3305F0F98D /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25F215E2318C253F5D7182C81A90E251 /* Debug */,
-				E890CABB0EF7031EBABB01E43902A745 /* Release */,
+				94A81176BA7B14F28303464A8E17DC9E /* Debug */,
+				246267A264ABC45E1530A4C23196BDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E73BFB7433831CF292FADF6B2CB7AC3B /* Debug */,
+				48FD2B4E815CEB933B18D313E9E9EF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFD07977A80B754634881F65FA5FEF3F /* Build configuration list for PBXNativeTarget "Pods-Desafio.Ioasys-Desafio.IoasysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FEB957F1CC4C1DCBDCD3400589D1290 /* Debug */,
+				F2EA7A3A38EF5DCDFEA2EC98A788B754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
