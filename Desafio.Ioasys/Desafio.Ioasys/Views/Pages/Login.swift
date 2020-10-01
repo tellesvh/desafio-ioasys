@@ -85,13 +85,14 @@ struct Login: View {
         loading = true
         // TODO Fazer validação de email
         loginController.logUserIn(email: email, password: password) {
-            (result: Result<LoginResponse, Error>) in
+            (result: Result<LoginResponse, LoginErrorResponse>) in
             switch result{
                 case .success(let loginResponse):
                     print(loginResponse)
                     // TODO Enviar usuário para próxima página
-                case .failure(let error):
-                    print(error)
+                case .failure(let parsedError):
+                    print(parsedError.errors ?? [])
+                    // TODO Mostrar erros ao usuário
                     // error = error.count > 0 ? "" :  "erro"
             }
             loading = false

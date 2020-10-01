@@ -50,7 +50,12 @@ struct Portfolio: Codable {
     }
 }
 
-struct LoginErrorResponse: Codable {
-    var success: Bool
-    var errors: [String]
+struct LoginErrorResponse: Codable, Error {
+    var success: Bool?
+    var errors: [String]?
+    
+    init(success: Bool = false, errors: [String] = []) {
+        self.success = success;
+        self.errors = errors;
+    }
 }

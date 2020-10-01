@@ -29,7 +29,7 @@ class HttpRequestPerformer : NSObject {
         self.method = method
     }
     
-    func run<T>(completion: @escaping (Response<T>) -> Void) where T: Codable {
+    func run<T, J>(completion: @escaping (Response<T, J>) -> Void) where T: Codable, J: Codable {
         AF.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers).responseData(completionHandler: {response in
             switch response.result {
                 case .success(let res):
@@ -43,21 +43,34 @@ class HttpRequestPerformer : NSObject {
                                 }
                                 completion(.success(try JSONDecoder().decode(T.self, from: res), headers))
                             } catch let error {
-                                completion(.failure(error))
+                                var parsedError: J? = nil
+                                do {
+                                    parsedError = try JSONDecoder().decode(J.self, from: res)
+                                } catch {
+                                    
+                                }
+                                completion(.failure(parsedError, error))
                             }
                         default:
+                            var parsedError: J? = nil
+                            do {
+                                parsedError = try JSONDecoder().decode(J.self, from: res)
+                            } catch {
+                                
+                            }
+                            
                             let error = NSError(domain: response.debugDescription, code: statusCode, userInfo: response.response?.allHeaderFields as? [String: Any])
-                            completion(.failure(error))
+                            completion(.failure(parsedError, error))
                         }
                     }
                 case .failure(let error):
-                    completion(.failure(error))
+                    completion(.failure(nil, error))
                 }
         })
     }
 }
 
-enum Response<T> {
+enum Response<T, J> {
     case success(T, [String : String])
-    case failure(Error)
+    case failure(J?, Error)
 }
