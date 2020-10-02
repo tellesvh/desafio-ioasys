@@ -9,23 +9,42 @@ import SwiftUI
 
 struct EnterpriseSearch: View {
     @State var searchQuery: String = ""
+    @State var height: CGFloat = 200
     
     var body: some View {
         NavigationView {
             VStack {
                 ZStack(alignment: .bottom) {
-                    Image("background")
+                    Image("background") /* TODO Fazer imagem com símbolos Ioasys */
                         .resizable()
-                        .frame(maxHeight: 200)
+                        .frame(maxHeight: height)
                         .aspectRatio(1 , contentMode: .fill)
                     VStack {
-                        TextField("Pesquise por empresa...", text: $searchQuery)
-                            .textFieldStyle(SearchTextFieldStyle())
-                            .padding(.horizontal)
-                            .offset(y: 25)
+                        HStack {
+                            Image(systemName: "magnifyingglass").foregroundColor(.gray)
+                                .padding(.trailing, 4)
+                            TextField("Pesquise por empresa...", text: $searchQuery, onEditingChanged: { (changed) in
+                                if changed {
+                                    withAnimation {
+                                        height = 100
+                                    }
+                                } else {
+                                    withAnimation {
+                                        height = 200
+                                    }
+                                }
+                            })
+                            .keyboardType(.default)
+                            .font(Font.custom("Rubik", size: 16))
+                            .foregroundColor(.black)
+                        }
+                        .padding(16)
+                        .background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color("Gray 1")))
                     }
+                    .padding(.horizontal)
+                    .offset(y: 25)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 200)
+                .frame(maxWidth: .infinity, maxHeight: height)
                 Spacer()
             }
             .navigationBarHidden(true)
@@ -34,19 +53,6 @@ struct EnterpriseSearch: View {
         .navigationBarBackButtonHidden(true)
         .preferredColorScheme(.light)
     }
-}
-
-struct SearchTextFieldStyle: TextFieldStyle {
-    
-    func _body(configuration: TextField<Self._Label>) -> some View {
-        configuration
-            .padding(16)
-            .keyboardType(.default)
-            .font(Font.custom("Rubik", size: 16))
-            .background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color("Gray 1")))
-            .foregroundColor(.black)
-    }
-    
 }
 
 struct EnterpriseSearch_Previews: PreviewProvider {
