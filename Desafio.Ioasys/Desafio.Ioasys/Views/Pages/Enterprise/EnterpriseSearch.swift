@@ -14,6 +14,7 @@ struct EnterpriseSearch: View {
     @State var hasSearched: Bool = false
     @State var enterprises: [Enterprise] = []
     @State var foundResultsText: String = ""
+    @State var errors: [String] = []
     
     var body: some View {
         NavigationView {
@@ -55,13 +56,22 @@ struct EnterpriseSearch: View {
                                     .font(Font.custom("Rubik", size: 12))
                                     .fontWeight(.light)
                             } else {
-                                Text(foundResultsText)
-                                    .foregroundColor(Color("Gray 3"))
-                                    .font(Font.custom("Rubik", size: 12))
-                                    .fontWeight(.light)
-                                
-                                ForEach(enterprises.indices, id: \.self) { index in
-                                    Text("\(index) \(self.enterprises[index].enterpriseName ?? "")")
+                                if (errors.count == 0) {
+                                    Text(foundResultsText)
+                                        .foregroundColor(Color("Gray 3"))
+                                        .font(Font.custom("Rubik", size: 12))
+                                        .fontWeight(.light)
+                                    
+                                    ForEach(enterprises.indices, id: \.self) { index in
+                                        Text("\(index) \(self.enterprises[index].enterpriseName ?? "")")
+                                    }
+                                } else {
+                                    ForEach(errors, id: \.self) { error in
+                                        Text(error)
+                                            .foregroundColor(Color("Error"))
+                                            .font(Font.custom("Rubik", size: 12))
+                                            .fontWeight(.regular)
+                                    }
                                 }
                             }
                         }
@@ -89,7 +99,7 @@ struct EnterpriseSearch: View {
                 foundResultsText = "\(enterprises.count) resultado\(plural ? "s" : "") encontrado\(plural ? "s" : "")."
             case .failure(let parsedError):
                 if let _errors = parsedError.errors {
-                    //                    errors = _errors
+                    errors = _errors
                 }
             }
             loading = false

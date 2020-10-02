@@ -34,7 +34,7 @@ class EnterpriseSearchController : ObservableObject {
                 } else {
                     completion(.success([]))
                 }
-            case .failure(let parsedError, let error):
+            case .failure(let parsedError, _):
                 let defaultValue = ErrorResponse(success: false, errors: ["Ocorreu um erro não esperado."])
                 completion(.failure(parsedError ?? defaultValue))
             }
