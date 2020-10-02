@@ -12,7 +12,7 @@ struct Login: View {
     @ObservedObject var keyboardResponder = KeyboardResponder()
     @State var email: String = ""
     @State var password: String = ""
-    @State var error: String = ""
+    @State var errors: [String] = []
     @State var loading: Bool = false
     
     var body: some View {
@@ -44,13 +44,15 @@ struct Login: View {
                         Spacer()
                     }
                     VStack(alignment: .trailing, spacing: 24) {
-                        TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, autocapitalization: .none, isSecure: false, error: $error)
-                        TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, autocapitalization: .none, isSecure: true, error: $error)
-                        if (error.count > 0) {
-                            Text(error)
-                                .foregroundColor(Color("Error"))
-                                .font(Font.custom("Rubik", size: 12))
-                                .fontWeight(.regular)
+                        TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, autocapitalization: .none, isSecure: false, errors: $errors)
+                        TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, autocapitalization: .none, isSecure: true, errors: $errors)
+                        if (errors.count > 0) {
+                            ForEach(errors, id: \.self) { error in
+                                Text(error)
+                                    .foregroundColor(Color("Error"))
+                                    .font(Font.custom("Rubik", size: 12))
+                                    .fontWeight(.regular)
+                            }
                         }
                         Button(action: {
                             logUserIn()
@@ -60,12 +62,8 @@ struct Login: View {
                                     .font(Font.custom("Rubik", size: 16))
                                     .fontWeight(.medium)
                             }
-                            .padding(12)
-                            .frame(minWidth: 0, maxWidth: .infinity)
-                            .foregroundColor(.white)
-                            .background(Color("Pink 1"))
-                            .cornerRadius(6)
                         }
+                            .buttonStyle(LoginButtonStyle())
                     }
                     .offset(y: -keyboardResponder.currentHeight*0.2)
                     .padding([.leading, .trailing])
@@ -91,9 +89,9 @@ struct Login: View {
                     print(loginResponse)
                     // TODO Enviar usuário para próxima página
                 case .failure(let parsedError):
-                    print(parsedError.errors ?? [])
-                    // TODO Mostrar erros ao usuário
-                    // error = error.count > 0 ? "" :  "erro"
+                    if let _errors = parsedError.errors {
+                        errors = _errors
+                    }
             }
             loading = false
         }
@@ -108,7 +106,7 @@ struct TextFieldLabel: View {
     @State var keyboardType: UIKeyboardType
     @State var autocapitalization: UITextAutocapitalizationType
     @State var isSecure: Bool
-    @Binding var error: String
+    @Binding var errors: [String]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -118,10 +116,10 @@ struct TextFieldLabel: View {
                 .fontWeight(.regular)
             if (!isSecure) {
                 TextField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autocapitalization: $autocapitalization, error: .constant(error.count > 0)))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autocapitalization: $autocapitalization, error: .constant(errors.count > 0)))
             } else {
                 SecureField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autocapitalization: $autocapitalization, error: .constant(error.count > 0)))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autocapitalization: $autocapitalization, error: .constant(errors.count > 0)))
             }
         }
     }
@@ -143,6 +141,17 @@ struct LoginTextFieldStyle: TextFieldStyle {
             .if(error) { $0.overlay(RoundedRectangle(cornerRadius: 10).stroke(Color("Error"), lineWidth: 1)) }
     }
     
+}
+
+struct LoginButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(12)
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .foregroundColor(.white)
+            .background(configuration.isPressed ? Color("Pink 2") : Color("Pink 1"))
+            .cornerRadius(6)
+  }
 }
 
 struct Login_Previews: PreviewProvider {
