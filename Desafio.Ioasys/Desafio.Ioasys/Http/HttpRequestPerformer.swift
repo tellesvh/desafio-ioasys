@@ -7,10 +7,6 @@
 
 import Alamofire
 
-let DEV_HOST: String = "https://empresas.ioasys.com.br"
-let API_VERSION: String = "v1"
-let BASE_URL: String = "\(DEV_HOST)/api/\(API_VERSION)/"
-
 class HttpRequestPerformer : NSObject {
     var parameters = Parameters()
     var headers = HTTPHeaders()

@@ -86,8 +86,8 @@ struct Login: View {
             (result: Result<LoginResponse, LoginErrorResponse>) in
             switch result{
                 case .success(let loginResponse):
-                    print(loginResponse)
                     // TODO Enviar usuário para próxima página
+                    break
                 case .failure(let parsedError):
                     if let _errors = parsedError.errors {
                         errors = _errors

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import KeychainSwift
 
 class LoginController : ObservableObject {
     func logUserIn(email: String, password: String, completion: @escaping (Result<LoginResponse, LoginErrorResponse>) -> Void) {
@@ -15,8 +16,20 @@ class LoginController : ObservableObject {
             (result: Response<LoginResponse, LoginErrorResponse>) in
             switch result {
                 case .success(let loginResponse, let headers):
-                    // TODO Salvar headers de forma segura (client, access-token, uid)
-                    print(headers)
+                    let keychain = KeychainSwift()
+                    
+                    if let client = headers["client"] {
+                        keychain.set(client, forKey: CLIENT_KEY)
+                    }
+                    
+                    if let accessToken = headers["access-token"] {
+                        keychain.set(accessToken, forKey: ACCESS_TOKEN_KEY)
+                    }
+                    
+                    if let uid = headers["uid"] {
+                        keychain.set(uid, forKey: UID_KEY)
+                    }
+                    
                     completion(.success(loginResponse))
             case .failure(let parsedError, _):
                     let defaultValue = LoginErrorResponse(success: false, errors: ["Ocorreu um erro não esperado."])

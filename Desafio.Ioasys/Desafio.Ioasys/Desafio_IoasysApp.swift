@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import KeychainSwift
 
 @main
 struct Desafio_IoasysApp: App {
@@ -26,5 +27,8 @@ class HostingController<ContentView>: UIHostingController<ContentView> where Con
 extension UIApplication {
     func switchHostingController() {
         windows.first?.rootViewController = HostingController(rootView: Login())
+        
+        let keychain = KeychainSwift()
+        keychain.clear()
     }
 }
