@@ -14,6 +14,7 @@ struct Login: View {
     @State var password: String = ""
     @State var errors: [String] = []
     @State var loading: Bool = false
+    @State var pushToLogin = false
     
     var body: some View {
         NavigationView {
@@ -22,7 +23,8 @@ struct Login: View {
                     ZStack {
                         Image("background_login")
                             .resizable()
-                            .scaledToFit()
+                            .frame(maxWidth: .infinity, maxHeight: 200)
+                            .aspectRatio(1 , contentMode: .fill)
                         VStack(spacing: 14) {
                             Image("logo_ioasys_symbol")
                                 .resizable()
@@ -54,16 +56,22 @@ struct Login: View {
                                     .fontWeight(.regular)
                             }
                         }
-                        Button(action: {
-                            logUserIn()
-                        }) {
-                            HStack {
-                                Text("ENTRAR")
-                                    .font(Font.custom("Rubik", size: 16))
-                                    .fontWeight(.medium)
+                        ZStack {
+                            Button(action: {
+                                logUserIn()
+                            }) {
+                                HStack {
+                                    Text("ENTRAR")
+                                        .font(Font.custom("Rubik", size: 16))
+                                        .fontWeight(.medium)
+                                }
                             }
-                        }
                             .buttonStyle(LoginButtonStyle())
+                            NavigationLink(destination: EnterpriseSearch(), isActive: $pushToLogin) {
+                                EmptyView()
+                            }
+                            .hidden()
+                        }
                     }
                     .offset(y: -keyboardResponder.currentHeight*0.2)
                     .padding([.leading, .trailing])
@@ -71,7 +79,7 @@ struct Login: View {
                         Spacer()
                         Spacer()
                     }
-            }
+                }
                 .navigationBarHidden(true)
                 .edgesIgnoringSafeArea([.top])
                 .preferredColorScheme(.light)
@@ -85,13 +93,13 @@ struct Login: View {
         loginController.logUserIn(email: email, password: password) {
             (result: Result<LoginResponse, LoginErrorResponse>) in
             switch result{
-                case .success(let loginResponse):
-                    // TODO Enviar usuário para próxima página
-                    break
-                case .failure(let parsedError):
-                    if let _errors = parsedError.errors {
-                        errors = _errors
-                    }
+            case .success(_):
+                pushToLogin = true
+                break
+            case .failure(let parsedError):
+                if let _errors = parsedError.errors {
+                    errors = _errors
+                }
             }
             loading = false
         }
@@ -131,7 +139,7 @@ struct LoginTextFieldStyle: TextFieldStyle {
     @Binding var autoCapitalization: UITextAutocapitalizationType
     @Binding var autoCorrectionDisabled: Bool
     @Binding var error: Bool
-
+    
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(16)
@@ -154,7 +162,7 @@ struct LoginButtonStyle: ButtonStyle {
             .foregroundColor(.white)
             .background(configuration.isPressed ? Color("Pink 2") : Color("Pink 1"))
             .cornerRadius(6)
-  }
+    }
 }
 
 struct Login_Previews: PreviewProvider {

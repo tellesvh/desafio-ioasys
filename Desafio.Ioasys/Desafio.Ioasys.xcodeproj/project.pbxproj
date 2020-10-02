@@ -15,6 +15,7 @@
 		2325C97125240C770058DD2A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C97025240C770058DD2A /* Login.swift */; };
 		23277A37252511E300EE05D1 /* ProgressViewOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277A36252511E300EE05D1 /* ProgressViewOverlay.swift */; };
 		2347DD9D252793E500F89213 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347DD9C252793E500F89213 /* Constants.swift */; };
+		2347DDA625279AA700F89213 /* EnterpriseSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347DDA525279AA700F89213 /* EnterpriseSearch.swift */; };
 		23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EC82524C5FF00899706 /* KeyboardResponder.swift */; };
 		23840ECE2524CD7200899706 /* EndEditingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840ECD2524CD7200899706 /* EndEditingBackground.swift */; };
 		23840EE22524D15D00899706 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */; };
@@ -63,6 +64,7 @@
 		2325C97025240C770058DD2A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		23277A36252511E300EE05D1 /* ProgressViewOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressViewOverlay.swift; path = Desafio.Ioasys/Views/ProgressViewOverlay.swift; sourceTree = SOURCE_ROOT; };
 		2347DD9C252793E500F89213 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2347DDA525279AA700F89213 /* EnterpriseSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseSearch.swift; sourceTree = "<group>"; };
 		23840EC82524C5FF00899706 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		23840ECD2524CD7200899706 /* EndEditingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndEditingBackground.swift; sourceTree = "<group>"; };
 		23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		2347DDA425279A8E00F89213 /* Enterprise */ = {
+			isa = PBXGroup;
+			children = (
+				2347DDA525279AA700F89213 /* EnterpriseSearch.swift */,
+			);
+			path = Enterprise;
+			sourceTree = "<group>";
+		};
 		23840EBC2524C2AA00899706 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		23840ED22524CD8D00899706 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				2347DDA425279A8E00F89213 /* Enterprise */,
 				2325C97025240C770058DD2A /* Login.swift */,
 				23277A36252511E300EE05D1 /* ProgressViewOverlay.swift */,
 			);
@@ -520,6 +531,7 @@
 				2325C97125240C770058DD2A /* Login.swift in Sources */,
 				23B564512526182300FB4645 /* LoginController.swift in Sources */,
 				23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */,
+				2347DDA625279AA700F89213 /* EnterpriseSearch.swift in Sources */,
 				23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
