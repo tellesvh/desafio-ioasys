@@ -17,6 +17,7 @@
 		233FEF362527B63700C16811 /* EnterpriseSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF352527B63700C16811 /* EnterpriseSearchController.swift */; };
 		233FEF3B2527B69500C16811 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF3A2527B69500C16811 /* ErrorResponse.swift */; };
 		233FEF402527B98100C16811 /* EnterprisesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF3F2527B98100C16811 /* EnterprisesResponse.swift */; };
+		233FEF452527CF4D00C16811 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF442527CF4D00C16811 /* ImageLoader.swift */; };
 		2347DD9D252793E500F89213 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347DD9C252793E500F89213 /* Constants.swift */; };
 		2347DDA625279AA700F89213 /* EnterpriseSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347DDA525279AA700F89213 /* EnterpriseSearch.swift */; };
 		23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EC82524C5FF00899706 /* KeyboardResponder.swift */; };
@@ -69,6 +70,7 @@
 		233FEF352527B63700C16811 /* EnterpriseSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseSearchController.swift; sourceTree = "<group>"; };
 		233FEF3A2527B69500C16811 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		233FEF3F2527B98100C16811 /* EnterprisesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesResponse.swift; sourceTree = "<group>"; };
+		233FEF442527CF4D00C16811 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		2347DD9C252793E500F89213 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2347DDA525279AA700F89213 /* EnterpriseSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseSearch.swift; sourceTree = "<group>"; };
 		23840EC82524C5FF00899706 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				23B56448252612BE00FB4645 /* HttpRequestPerformer.swift */,
+				233FEF442527CF4D00C16811 /* ImageLoader.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 			files = (
 				23277A37252511E300EE05D1 /* ProgressViewOverlay.swift in Sources */,
 				233FEF402527B98100C16811 /* EnterprisesResponse.swift in Sources */,
+				233FEF452527CF4D00C16811 /* ImageLoader.swift in Sources */,
 				23840ECE2524CD7200899706 /* EndEditingBackground.swift in Sources */,
 				23B5645A252618E600FB4645 /* LoginResponse.swift in Sources */,
 				2325C933252407250058DD2A /* Desafio_IoasysApp.swift in Sources */,
