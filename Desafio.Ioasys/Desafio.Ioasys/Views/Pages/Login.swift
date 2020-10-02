@@ -44,8 +44,8 @@ struct Login: View {
                         Spacer()
                     }
                     VStack(alignment: .trailing, spacing: 24) {
-                        TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, autocapitalization: .none, isSecure: false, errors: $errors)
-                        TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, autocapitalization: .none, isSecure: true, errors: $errors)
+                        TextFieldLabel(label: "Email", text: $email, placeholder: "Digite seu email.", keyboardType: .emailAddress, autoCapitalization: .none, autoCorrectionDisabled: true, isSecure: false, errors: $errors)
+                        TextFieldLabel(label: "Senha", text: $password, placeholder: "Digite sua senha.", keyboardType: .default, autoCapitalization: .none, autoCorrectionDisabled: true, isSecure: true, errors: $errors)
                         if (errors.count > 0) {
                             ForEach(errors, id: \.self) { error in
                                 Text(error)
@@ -104,7 +104,8 @@ struct TextFieldLabel: View {
     @Binding var text: String
     @State var placeholder: String
     @State var keyboardType: UIKeyboardType
-    @State var autocapitalization: UITextAutocapitalizationType
+    @State var autoCapitalization: UITextAutocapitalizationType
+    @State var autoCorrectionDisabled: Bool
     @State var isSecure: Bool
     @Binding var errors: [String]
     
@@ -116,10 +117,10 @@ struct TextFieldLabel: View {
                 .fontWeight(.regular)
             if (!isSecure) {
                 TextField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autocapitalization: $autocapitalization, error: .constant(errors.count > 0)))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autoCapitalization: $autoCapitalization, autoCorrectionDisabled: $autoCorrectionDisabled, error: .constant(errors.count > 0)))
             } else {
                 SecureField(placeholder, text: $text)
-                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autocapitalization: $autocapitalization, error: .constant(errors.count > 0)))
+                    .textFieldStyle(LoginTextFieldStyle(keyboardType: $keyboardType, autoCapitalization: $autoCapitalization, autoCorrectionDisabled: $autoCorrectionDisabled, error: .constant(errors.count > 0)))
             }
         }
     }
@@ -127,7 +128,8 @@ struct TextFieldLabel: View {
 
 struct LoginTextFieldStyle: TextFieldStyle {
     @Binding var keyboardType: UIKeyboardType
-    @Binding var autocapitalization: UITextAutocapitalizationType
+    @Binding var autoCapitalization: UITextAutocapitalizationType
+    @Binding var autoCorrectionDisabled: Bool
     @Binding var error: Bool
 
     func _body(configuration: TextField<Self._Label>) -> some View {
@@ -137,7 +139,8 @@ struct LoginTextFieldStyle: TextFieldStyle {
             .font(Font.custom("Rubik", size: 16))
             .background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color("Gray 1")))
             .foregroundColor(.black)
-            .autocapitalization(autocapitalization)
+            .autocapitalization(autoCapitalization)
+            .disableAutocorrection(autoCorrectionDisabled)
             .if(error) { $0.overlay(RoundedRectangle(cornerRadius: 10).stroke(Color("Error"), lineWidth: 1)) }
     }
     
