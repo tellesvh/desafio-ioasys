@@ -14,7 +14,7 @@ class HttpRequestPerformer : NSObject {
     var url: String = BASE_URL
     var encoding: ParameterEncoding! = JSONEncoding.default
     
-    init(body: [String : Any], headers: [String : String] = [:], url: String, method: HTTPMethod = .get, isJSONRequest: Bool = true) {
+    init(body: [String : Any] = [:], headers: [String : String] = [:], url: String, method: HTTPMethod = .get, isJSONRequest: Bool = true) {
         super.init()
         body.forEach{parameters.updateValue($0.value, forKey: $0.key)}
         headers.forEach({self.headers.add(name: $0.key, value: $0.value)})
@@ -26,42 +26,43 @@ class HttpRequestPerformer : NSObject {
     }
     
     func run<T, J>(completion: @escaping (Response<T, J>) -> Void) where T: Codable, J: Codable {
-        AF.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers).responseData(completionHandler: {response in
+        AF.request(url, method: method, parameters: parameters.count > 0 ? parameters : nil, encoding: encoding, headers: headers).responseData(completionHandler: {response in
             switch response.result {
-                case .success(let res):
-                    if let statusCode = response.response?.statusCode{
-                        switch statusCode {
-                        case 200...299:
-                            do {
-                                var headers: [String : String] = [:]
-                                if let _headers = response.response?.headers {
-                                    _headers.forEach({headers.updateValue($0.value, forKey: $0.name)})
-                                }
-                                completion(.success(try JSONDecoder().decode(T.self, from: res), headers))
-                            } catch let error {
-                                var parsedError: J? = nil
-                                do {
-                                    parsedError = try JSONDecoder().decode(J.self, from: res)
-                                } catch {
-                                    
-                                }
-                                completion(.failure(parsedError, error))
+            case .success(let res):
+                if let statusCode = response.response?.statusCode{
+                    switch statusCode {
+                    case 200...299:
+                        do {
+                            var headers: [String : String] = [:]
+                            if let _headers = response.response?.headers {
+                                _headers.forEach({headers.updateValue($0.value, forKey: $0.name)})
                             }
-                        default:
+                            completion(.success(try JSONDecoder().decode(T.self, from: res), headers))
+                        } catch let error {
                             var parsedError: J? = nil
                             do {
                                 parsedError = try JSONDecoder().decode(J.self, from: res)
                             } catch {
                                 
                             }
-                            
-                            let error = NSError(domain: response.debugDescription, code: statusCode, userInfo: response.response?.allHeaderFields as? [String: Any])
                             completion(.failure(parsedError, error))
                         }
+                    default:
+                        var parsedError: J? = nil
+                        do {
+                            parsedError = try JSONDecoder().decode(J.self, from: res)
+                        } catch {
+                            
+                        }
+                        
+                        let error = NSError(domain: response.debugDescription, code: statusCode, userInfo: response.response?.allHeaderFields as? [String: Any])
+                        completion(.failure(parsedError, error))
                     }
-                case .failure(let error):
-                    completion(.failure(nil, error))
                 }
+            case .failure(let error):
+                let des = error.errorDescription
+                completion(.failure(nil, error))
+            }
         })
     }
 }

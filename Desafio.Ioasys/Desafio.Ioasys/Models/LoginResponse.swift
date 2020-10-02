@@ -46,16 +46,7 @@ struct Portfolio: Codable {
     
     enum CodingKeys: String, CodingKey {
         case enterprisesNumber = "enterprises_number"
+        
         case enterprises
-    }
-}
-
-struct LoginErrorResponse: Codable, Error {
-    var success: Bool?
-    var errors: [String]?
-    
-    init(success: Bool = false, errors: [String] = []) {
-        self.success = success;
-        self.errors = errors;
     }
 }

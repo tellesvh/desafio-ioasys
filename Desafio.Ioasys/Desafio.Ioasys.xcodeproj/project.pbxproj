@@ -14,6 +14,9 @@
 		2325C9502524072B0058DD2A /* Desafio_IoasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C94F2524072B0058DD2A /* Desafio_IoasysUITests.swift */; };
 		2325C97125240C770058DD2A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325C97025240C770058DD2A /* Login.swift */; };
 		23277A37252511E300EE05D1 /* ProgressViewOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277A36252511E300EE05D1 /* ProgressViewOverlay.swift */; };
+		233FEF362527B63700C16811 /* EnterpriseSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF352527B63700C16811 /* EnterpriseSearchController.swift */; };
+		233FEF3B2527B69500C16811 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF3A2527B69500C16811 /* ErrorResponse.swift */; };
+		233FEF402527B98100C16811 /* EnterprisesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FEF3F2527B98100C16811 /* EnterprisesResponse.swift */; };
 		2347DD9D252793E500F89213 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347DD9C252793E500F89213 /* Constants.swift */; };
 		2347DDA625279AA700F89213 /* EnterpriseSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347DDA525279AA700F89213 /* EnterpriseSearch.swift */; };
 		23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EC82524C5FF00899706 /* KeyboardResponder.swift */; };
@@ -63,6 +66,9 @@
 		2325C9512524072B0058DD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2325C97025240C770058DD2A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		23277A36252511E300EE05D1 /* ProgressViewOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressViewOverlay.swift; path = Desafio.Ioasys/Views/ProgressViewOverlay.swift; sourceTree = SOURCE_ROOT; };
+		233FEF352527B63700C16811 /* EnterpriseSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseSearchController.swift; sourceTree = "<group>"; };
+		233FEF3A2527B69500C16811 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		233FEF3F2527B98100C16811 /* EnterprisesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesResponse.swift; sourceTree = "<group>"; };
 		2347DD9C252793E500F89213 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2347DDA525279AA700F89213 /* EnterpriseSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseSearch.swift; sourceTree = "<group>"; };
 		23840EC82524C5FF00899706 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				23B564502526182300FB4645 /* LoginController.swift */,
+				233FEF352527B63700C16811 /* EnterpriseSearchController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				23B56459252618E600FB4645 /* LoginResponse.swift */,
+				233FEF3A2527B69500C16811 /* ErrorResponse.swift */,
+				233FEF3F2527B98100C16811 /* EnterprisesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -523,9 +532,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				23277A37252511E300EE05D1 /* ProgressViewOverlay.swift in Sources */,
+				233FEF402527B98100C16811 /* EnterprisesResponse.swift in Sources */,
 				23840ECE2524CD7200899706 /* EndEditingBackground.swift in Sources */,
 				23B5645A252618E600FB4645 /* LoginResponse.swift in Sources */,
 				2325C933252407250058DD2A /* Desafio_IoasysApp.swift in Sources */,
+				233FEF362527B63700C16811 /* EnterpriseSearchController.swift in Sources */,
 				23B56449252612BE00FB4645 /* HttpRequestPerformer.swift in Sources */,
 				2347DD9D252793E500F89213 /* Constants.swift in Sources */,
 				2325C97125240C770058DD2A /* Login.swift in Sources */,
@@ -533,6 +544,7 @@
 				23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */,
 				2347DDA625279AA700F89213 /* EnterpriseSearch.swift in Sources */,
 				23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */,
+				233FEF3B2527B69500C16811 /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -91,7 +91,7 @@ struct Login: View {
         loading = true
         // TODO Fazer validação de email
         loginController.logUserIn(email: email, password: password) {
-            (result: Result<LoginResponse, LoginErrorResponse>) in
+            (result: Result<LoginResponse, ErrorResponse>) in
             switch result{
             case .success(_):
                 pushToLogin = true
