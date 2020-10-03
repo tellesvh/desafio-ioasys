@@ -8,6 +8,12 @@
 import XCTest
 
 class Desafio_IoasysUITests: XCTestCase {
+    
+    let app = XCUIApplication()
+    
+    override func setUp() {
+        app.launch()
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -17,20 +23,52 @@ class Desafio_IoasysUITests: XCTestCase {
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testSuccessfulLogin() throws {
+        let emailTextField = app.textFields["Digite seu email."]
+        let passwordSecureField = app.secureTextFields["Digite sua senha."]
+        let enterButton = app.buttons["ENTRAR"]
+        
+        emailTextField.tap()
+        sleep(1)
+        emailTextField.typeText("testeapple@ioasys.com.br")
+        
+        passwordSecureField.tap()
+        sleep(1)
+        passwordSecureField.typeText("12341234")
+        
+        enterButton.tap()
+        
+        sleep(5)
+        
+        let searchEnterprisesBackgroundOverlay = app.images["background_overlay"]
+        
+        XCTAssertTrue(searchEnterprisesBackgroundOverlay.exists)
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUnsuccessfulLogin() throws {
+        let emailTextField = app.textFields["Digite seu email."]
+        let passwordSecureField = app.secureTextFields["Digite sua senha."]
+        let enterButton = app.buttons["ENTRAR"]
+        
+        emailTextField.tap()
+        sleep(1)
+        emailTextField.typeText("testeapple@ioasys.com.br")
+        
+        passwordSecureField.tap()
+        sleep(1)
+        passwordSecureField.typeText("0000")
+        
+        enterButton.tap()
+        
+        sleep(5)
+        
+        let invalidEmailLabel = app.staticTexts["Este email não é válido."]
+        let invalidCredentialsLabel = app.staticTexts["Invalid login credentials. Please try again."]
+        
+        XCTAssertTrue(invalidEmailLabel.exists || invalidCredentialsLabel.exists)
     }
-
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
