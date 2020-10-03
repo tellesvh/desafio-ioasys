@@ -89,20 +89,25 @@ struct Login: View {
     
     func logUserIn() {
         loading = true
-        // TODO Fazer validação de email
-        loginController.logUserIn(email: email, password: password) {
-            (result: Result<LoginResponse, ErrorResponse>) in
-            switch result{
-            case .success(_):
-                pushToLogin = true
-                break
-            case .failure(let parsedError):
-                if let _errors = parsedError.errors {
-                    errors = _errors
+        if (email.isValidEmail()) {
+            loginController.logUserIn(email: email, password: password) {
+                (result: Result<LoginResponse, ErrorResponse>) in
+                switch result{
+                case .success(_):
+                    pushToLogin = true
+                    break
+                case .failure(let parsedError):
+                    if let _errors = parsedError.errors {
+                        errors = _errors
+                    }
                 }
+                loading = false
             }
+        } else {
+            errors = ["Este email não é válido."]
             loading = false
         }
+        
     }
     
 }

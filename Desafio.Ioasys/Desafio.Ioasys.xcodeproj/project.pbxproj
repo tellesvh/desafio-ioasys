@@ -24,7 +24,7 @@
 		23840ECE2524CD7200899706 /* EndEditingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840ECD2524CD7200899706 /* EndEditingBackground.swift */; };
 		23840EE22524D15D00899706 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */; };
 		23840EE32524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */; };
-		23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */; };
+		23840EEC2524FF1000899706 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23840EEB2524FF1000899706 /* Extensions.swift */; };
 		23B56449252612BE00FB4645 /* HttpRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B56448252612BE00FB4645 /* HttpRequestPerformer.swift */; };
 		23B564512526182300FB4645 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B564502526182300FB4645 /* LoginController.swift */; };
 		23B5645A252618E600FB4645 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B56459252618E600FB4645 /* LoginResponse.swift */; };
@@ -77,7 +77,7 @@
 		23840ECD2524CD7200899706 /* EndEditingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndEditingBackground.swift; sourceTree = "<group>"; };
 		23840EE02524D15D00899706 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		23840EE12524D15D00899706 /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
+		23840EEB2524FF1000899706 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		23B56448252612BE00FB4645 /* HttpRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestPerformer.swift; sourceTree = "<group>"; };
 		23B564502526182300FB4645 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		23B56459252618E600FB4645 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 			children = (
 				2347DD9C252793E500F89213 /* Constants.swift */,
 				23840EC82524C5FF00899706 /* KeyboardResponder.swift */,
-				23840EEB2524FF1000899706 /* SwiftUIExtensions.swift */,
+				23840EEB2524FF1000899706 /* Extensions.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -545,7 +545,7 @@
 				2347DD9D252793E500F89213 /* Constants.swift in Sources */,
 				2325C97125240C770058DD2A /* Login.swift in Sources */,
 				23B564512526182300FB4645 /* LoginController.swift in Sources */,
-				23840EEC2524FF1000899706 /* SwiftUIExtensions.swift in Sources */,
+				23840EEC2524FF1000899706 /* Extensions.swift in Sources */,
 				2347DDA625279AA700F89213 /* EnterpriseSearch.swift in Sources */,
 				23840EC92524C5FF00899706 /* KeyboardResponder.swift in Sources */,
 				233FEF3B2527B69500C16811 /* ErrorResponse.swift in Sources */,
