@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.2.2)
   - KeychainSwift (19.0.0)
+  - URLImage (0.9.19)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - KeychainSwift (~> 19.0)
+  - URLImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - KeychainSwift
+    - URLImage
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  URLImage: 107320dff147321cceb201af24e8a154f24e6aed
 
-PODFILE CHECKSUM: c9909573f8ccaaba2e8e5a2509bd82c4e005aac3
+PODFILE CHECKSUM: 85e600e3d5e035e5b257effb82aee1851b6863e3
 
 COCOAPODS: 1.9.3

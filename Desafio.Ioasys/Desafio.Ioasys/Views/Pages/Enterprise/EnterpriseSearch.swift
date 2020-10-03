@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct EnterpriseSearch: View {
     @ObservedObject var enterpriseSearchController = EnterpriseSearchController()
@@ -17,77 +18,73 @@ struct EnterpriseSearch: View {
     @State var errors: [String] = []
     
     var body: some View {
-        NavigationView {
-            ProgressViewOverlay(isLoading: $loading) {
-                VStack(spacing: 0) {
-                    ZStack(alignment: .bottom) {
-                        Image("background") /* TODO Fazer overlay com símbolos Ioasys */
-                            .resizable()
-                            .frame(maxHeight: 200)
-                            .aspectRatio(1 , contentMode: .fill)
-                        VStack {
-                            HStack {
-                                Image(systemName: "magnifyingglass").foregroundColor(.gray)
-                                    .padding(.trailing, 4)
-                                TextField("Pesquise por empresa...", text: $searchQuery,
-                                          onCommit: {
-                                            hasSearched = true
-                                            searchEnterprises()
-                                          })
-                                    .keyboardType(.default)
-                                    .font(Font.custom("Rubik", size: 16))
-                                    .foregroundColor(.black)
-                            }
-                            .padding(16)
-                            .background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color("Gray 1")))
+        ProgressViewOverlay(isLoading: $loading) {
+            VStack(spacing: 0) {
+                ZStack(alignment: .bottom) {
+                    Image("background") /* TODO Fazer overlay com símbolos Ioasys */
+                        .resizable()
+                        .frame(maxHeight: 200)
+                        .aspectRatio(1 , contentMode: .fill)
+                    VStack {
+                        HStack {
+                            Image(systemName: "magnifyingglass").foregroundColor(.gray)
+                                .padding(.trailing, 4)
+                            TextField("Pesquise por empresa...", text: $searchQuery,
+                                      onCommit: {
+                                        hasSearched = true
+                                        searchEnterprises()
+                                      })
+                                .keyboardType(.default)
+                                .font(Font.custom("Rubik", size: 16))
+                                .foregroundColor(.black)
                         }
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding(.horizontal)
-                        .offset(y: 25)
+                        .padding(16)
+                        .background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color("Gray 1")))
                     }
-                    .zIndex(2.0)
-                    .frame(maxWidth: .infinity, maxHeight: 200)
-                    
-                    ScrollView {
-                        LazyVStack(alignment: .leading) {
-                            if (!hasSearched) {
-                                Text("Digite o texto da busca e toque em \"Retorno\" para efetuá-la.")
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal)
+                    .offset(y: 25)
+                }
+                .zIndex(2.0)
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                
+                ScrollView {
+                    LazyVStack(alignment: .leading) {
+                        if (!hasSearched) {
+                            Text("Digite o texto da busca e toque em \"Retorno\" para efetuá-la.")
+                                .foregroundColor(Color("Gray 3"))
+                                .font(Font.custom("Rubik", size: 12))
+                                .fontWeight(.light)
+                        } else {
+                            if (errors.count == 0) {
+                                Text(foundResultsText)
                                     .foregroundColor(Color("Gray 3"))
                                     .font(Font.custom("Rubik", size: 12))
                                     .fontWeight(.light)
+                                
+                                VStack(spacing: 16) {
+                                    ForEach(enterprises.indices, id: \.self) { index in
+                                        EnterpriseRow(enterprise: self.enterprises[index])
+                                    }
+                                }
+                                .padding(.top, 12)
                             } else {
-                                if (errors.count == 0) {
-                                    Text(foundResultsText)
-                                        .foregroundColor(Color("Gray 3"))
+                                ForEach(errors, id: \.self) { error in
+                                    Text(error)
+                                        .foregroundColor(Color("Error"))
                                         .font(Font.custom("Rubik", size: 12))
-                                        .fontWeight(.light)
-                                    
-                                    VStack(spacing: 16) {
-                                        ForEach(enterprises.indices, id: \.self) { index in
-                                            EnterpriseRow(enterprise: self.enterprises[index])
-                                        }
-                                    }
-                                    .padding(.top, 12)
-                                } else {
-                                    ForEach(errors, id: \.self) { error in
-                                        Text(error)
-                                            .foregroundColor(Color("Error"))
-                                            .font(Font.custom("Rubik", size: 12))
-                                            .fontWeight(.regular)
-                                    }
+                                        .fontWeight(.regular)
                                 }
                             }
                         }
-                        .padding(.top, 36)
-                        .padding(.horizontal)
                     }
+                    .padding(.top, 36)
+                    .padding(.horizontal)
                 }
-                .navigationBarHidden(true)
-                .edgesIgnoringSafeArea([.top])
             }
+            .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top])
         }
-        .navigationBarBackButtonHidden(true)
-        .preferredColorScheme(.light)
     }
     
     func searchEnterprises() {
@@ -111,38 +108,58 @@ struct EnterpriseSearch: View {
 }
 
 struct EnterpriseRow: View {
-    @ObservedObject var imageLoader: ImageLoader
-    var enterprise: Enterprise?
-    @State var image: UIImage = UIImage()
+    var enterprise: Enterprise
+    private var imageUrl: URL
     
     init(enterprise: Enterprise) {
         self.enterprise = enterprise
-        if let url = enterprise.photo {
-            let finalUrl = "\(DEV_HOST)\(url)"
-            imageLoader = ImageLoader(urlString: finalUrl)
+        if let _imageUrl = enterprise.photo {
+            imageUrl = URL(DEV_HOST + _imageUrl)
         } else {
-            imageLoader = ImageLoader(urlString: "https://via.placeholder.com/600x300png")
+            imageUrl = URL("https://via.placeholder.com/600x300png")
         }
     }
     
     var body: some View {
-        if let name = enterprise?.enterpriseName {
+        NavigationLink(destination: EnterpriseDetail(enterprise: enterprise)) {
             ZStack(alignment: .bottomTrailing) {
-//                Image("background")
-                Image(uiImage: image)
-                    .resizable()
-                    .frame(maxHeight: 150)
-                    .aspectRatio(1 , contentMode: .fill)
-                    .onReceive(imageLoader.didChange) { data in
-                        self.image = UIImage(data: data) ?? UIImage()
-                    }
-                Text(name)
-                    .font(Font.custom("Rubik", size: 14))
-                    .padding(.vertical, 8)
-                    .padding(.horizontal, 12)
-                    .foregroundColor(.white)
-                    .background(Color.black.opacity(0.75))
-                    .cornerRadius(radius: 12, corners: [.topLeft])
+                URLImage(imageUrl,
+                         placeholder: {
+                            ProgressView($0) { progress in
+                                ZStack {
+                                    if progress > 0.0 {
+                                        CircleProgressView(progress)
+                                            .stroke(lineWidth: 8.0)
+                                            .frame(height: 50)
+                                            .foregroundColor(Color("Pink 1"))
+                                    }
+                                    else {
+                                        CircleActivityView()
+                                            .stroke(lineWidth: 50.0)
+                                            .frame(height: 50)
+                                            .foregroundColor(Color("Pink 1"))
+                                    }
+                                }
+                            }
+                            .frame(height: 150)
+                         }
+                        ) { proxy in
+                            proxy.image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .clipped()
+                          }
+                    .frame(height: 150)
+                
+                if let name = enterprise.enterpriseName {
+                    Text(name)
+                        .font(Font.custom("Rubik", size: 14))
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 12)
+                        .foregroundColor(.white)
+                        .background(Color.black.opacity(0.75))
+                        .cornerRadius(radius: 12, corners: [.topLeft])
+                }
             }
             .frame(maxWidth: .infinity)
             .clipShape(RoundedRectangle(cornerRadius: 4))
@@ -150,13 +167,12 @@ struct EnterpriseRow: View {
     }
 }
 
+
 struct EnterpriseSearch_Previews: PreviewProvider {
     static var previews: some View {
         EnterpriseSearch()
     }
 }
-
-var e: Enterprise = Enterprise(enterpriseName: "Telles", photo: "/uploads/enterprise/photo/1/240.jpeg")
 
 struct EnterpriseRow_Previews: PreviewProvider {
     static var previews: some View {
@@ -165,31 +181,4 @@ struct EnterpriseRow_Previews: PreviewProvider {
     }
 }
 
-
-
-struct CornerRadiusStyle: ViewModifier {
-    var radius: CGFloat
-    var corners: UIRectCorner
-
-    struct CornerRadiusShape: Shape {
-
-        var radius = CGFloat.infinity
-        var corners = UIRectCorner.allCorners
-
-        func path(in rect: CGRect) -> Path {
-            let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-            return Path(path.cgPath)
-        }
-    }
-
-    func body(content: Content) -> some View {
-        content
-            .clipShape(CornerRadiusShape(radius: radius, corners: corners))
-    }
-}
-
-extension View {
-    func cornerRadius(radius: CGFloat, corners: UIRectCorner) -> some View {
-        ModifiedContent(content: self, modifier: CornerRadiusStyle(radius: radius, corners: corners))
-    }
-}
+var e: Enterprise = Enterprise(enterpriseName: "Telles", photo: "/uploads/enterprise/photo/1/240.jpeg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo metus, finibus sit amet elit vel, bibendum cursus ligula. Phasellus fringilla tincidunt libero eget imperdiet. Praesent a risus quam. Nulla consequat tellus id malesuada vehicula. Donec consectetur ligula ligula, quis scelerisque ligula ornare at. Ut nec turpis feugiat nisi rhoncus varius. Morbi luctus interdum dolor, ut laoreet risus tincidunt bibendum. Donec in justo ut neque feugiat rutrum non tempor tortor. Nullam lacinia metus feugiat ligula placerat, in commodo arcu laoreet. Phasellus ut rutrum turpis, quis pretium nisl. Nam semper risus vel odio porttitor pharetra. Vivamus ornare quam in elit facilisis, quis lacinia urna condimentum. Fusce in est tellus. Nunc convallis scelerisque lobortis.\n\nSuspendisse eu libero nec orci iaculis laoreet. Fusce dictum non elit sed porta. Nullam placerat nunc eu dignissim sagittis. Mauris tempus orci ac purus auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ultrices justo ut ante consectetur, et condimentum elit efficitur. Maecenas dui risus, varius eget magna vitae, semper vulputate velit. Etiam et mauris finibus, euismod turpis nec, porta quam.\n\nAenean auctor felis hendrerit ex feugiat, ut ullamcorper urna egestas. Sed ac ex sit amet odio dapibus tempor sed eget sapien. Cras eget consequat leo, a hendrerit sapien. Phasellus congue, odio nec fringilla aliquet, elit nisi ullamcorper ex, vel egestas neque purus ac dui. Donec dignissim magna id dui lobortis tempus. Mauris pharetra urna mi, sed euismod massa lobortis et. Vivamus at maximus augue. Etiam pellentesque leo id lorem ultrices ultrices. Etiam tempor laoreet fringilla. Morbi sed hendrerit nisi, ac facilisis purus. Nulla vel libero nec urna ullamcorper dapibus. Sed auctor varius eros sed malesuada. Vivamus purus urna, convallis sed velit eu, auctor ultricies turpis. Donec quis varius magna.\n\nPraesent blandit ultrices nibh, eget iaculis velit finibus vel. Mauris ligula neque, posuere et mauris non, feugiat condimentum turpis. Donec et vulputate lectus, nec tempor erat. Mauris dapibus libero tortor, quis bibendum tortor facilisis non. Nullam malesuada rutrum metus non posuere. Pellentesque massa metus, elementum in condimentum sit amet, convallis tempor leo. Nullam ultrices elementum neque, ac congue lectus rutrum in. Sed vel orci maximus, interdum justo auctor, posuere lacus. Maecenas ut purus nec augue placerat viverra. Suspendisse malesuada nunc est, vel auctor arcu molestie suscipit. Quisque bibendum egestas ipsum, sagittis molestie lorem pretium sit amet. In hac habitasse platea dictumst. Suspendisse justo elit, faucibus eu vestibulum nec, gravida id massa.")
