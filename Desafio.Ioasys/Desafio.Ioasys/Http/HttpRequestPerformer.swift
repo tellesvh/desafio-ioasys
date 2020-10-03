@@ -7,6 +7,12 @@
 
 import Alamofire
 
+enum RequestType {
+    case json
+    case normal
+    case query
+}
+
 class HttpRequestPerformer : NSObject {
     var parameters = Parameters()
     var headers = HTTPHeaders()
@@ -14,11 +20,16 @@ class HttpRequestPerformer : NSObject {
     var url: String = BASE_URL
     var encoding: ParameterEncoding! = JSONEncoding.default
     
-    init(body: [String : Any] = [:], headers: [String : String] = [:], url: String, method: HTTPMethod = .get, isJSONRequest: Bool = true) {
+    init(body: [String : Any] = [:], headers: [String : String] = [:], url: String, method: HTTPMethod = .get, requestType: RequestType = .json) {
         super.init()
         body.forEach{parameters.updateValue($0.value, forKey: $0.key)}
         headers.forEach({self.headers.add(name: $0.key, value: $0.value)})
-        if !isJSONRequest{
+        switch requestType {
+        case .json:
+            encoding = JSONEncoding.default
+        case .query:
+            encoding = URLEncoding.queryString
+        default:
             encoding = URLEncoding.default
         }
         self.url = "\(self.url)\(url)"
@@ -60,7 +71,6 @@ class HttpRequestPerformer : NSObject {
                     }
                 }
             case .failure(let error):
-                let des = error.errorDescription
                 completion(.failure(nil, error))
             }
         })

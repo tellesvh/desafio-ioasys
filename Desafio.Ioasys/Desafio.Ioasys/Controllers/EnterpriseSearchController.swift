@@ -12,6 +12,7 @@ class EnterpriseSearchController : ObservableObject {
     func searchEnterprises(query: String, completion: @escaping (Result<[Enterprise], ErrorResponse>) -> Void) {
         let keychain = KeychainSwift()
         var headers: [String : String] = [:]
+        let parameters: [String : Any] = ["name": query]
         
         if let client = keychain.get(CLIENT_KEY) {
             headers.updateValue(client, forKey: "client")
@@ -25,7 +26,7 @@ class EnterpriseSearchController : ObservableObject {
             headers.updateValue(uid, forKey: "uid")
         }
         
-        HttpRequestPerformer(headers: headers, url: "enterprises?name=\(query)", method: .get).run() {
+        HttpRequestPerformer(body: parameters, headers: headers, url: "enterprises", method: .get, requestType: .query).run() {
             (result: Response<EnterprisesResponse, ErrorResponse>) in
             switch result {
             case .success(let enterprisesResponse, _):
