@@ -21,10 +21,12 @@ struct EnterpriseSearch: View {
         ProgressViewOverlay(isLoading: $loading) {
             VStack(spacing: 0) {
                 ZStack(alignment: .bottom) {
-                    Image("background") /* TODO Fazer overlay com símbolos Ioasys */
+                    Image("background_overlay")
                         .resizable()
-                        .frame(maxHeight: 200)
-                        .aspectRatio(1 , contentMode: .fill)
+                        .scaledToFill()
+                        .frame(height: 200)
+                        .clipped()
+                    
                     VStack {
                         HStack {
                             Image(systemName: "magnifyingglass").foregroundColor(.gray)
@@ -95,8 +97,13 @@ struct EnterpriseSearch: View {
             switch result {
             case .success(let enterprises):
                 self.enterprises = enterprises
-                let plural = enterprises.count > 1 || enterprises.count == 0
-                foundResultsText = "\(enterprises.count) resultado\(plural ? "s" : "") encontrado\(plural ? "s" : "")."
+                let plural = enterprises.count > 1
+                if (enterprises.count > 0) {
+                    foundResultsText = "\(enterprises.count) resultado\(plural ? "s" : "") encontrado\(plural ? "s" : "")."
+                } else {
+                    foundResultsText = "Nenhum resultado encontrado."
+                }
+                
             case .failure(let parsedError):
                 if let _errors = parsedError.errors {
                     errors = _errors
@@ -174,11 +181,11 @@ struct EnterpriseSearch_Previews: PreviewProvider {
     }
 }
 
-struct EnterpriseRow_Previews: PreviewProvider {
-    static var previews: some View {
-        EnterpriseRow(enterprise: e)
-            .previewLayout(.fixed(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/))
-    }
-}
+//struct EnterpriseRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EnterpriseRow(enterprise: e)
+//            .previewLayout(.fixed(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/))
+//    }
+//}
 
 var e: Enterprise = Enterprise(enterpriseName: "Telles", photo: "/uploads/enterprise/photo/1/240.jpeg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo metus, finibus sit amet elit vel, bibendum cursus ligula. Phasellus fringilla tincidunt libero eget imperdiet. Praesent a risus quam. Nulla consequat tellus id malesuada vehicula. Donec consectetur ligula ligula, quis scelerisque ligula ornare at. Ut nec turpis feugiat nisi rhoncus varius. Morbi luctus interdum dolor, ut laoreet risus tincidunt bibendum. Donec in justo ut neque feugiat rutrum non tempor tortor. Nullam lacinia metus feugiat ligula placerat, in commodo arcu laoreet. Phasellus ut rutrum turpis, quis pretium nisl. Nam semper risus vel odio porttitor pharetra. Vivamus ornare quam in elit facilisis, quis lacinia urna condimentum. Fusce in est tellus. Nunc convallis scelerisque lobortis.\n\nSuspendisse eu libero nec orci iaculis laoreet. Fusce dictum non elit sed porta. Nullam placerat nunc eu dignissim sagittis. Mauris tempus orci ac purus auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ultrices justo ut ante consectetur, et condimentum elit efficitur. Maecenas dui risus, varius eget magna vitae, semper vulputate velit. Etiam et mauris finibus, euismod turpis nec, porta quam.\n\nAenean auctor felis hendrerit ex feugiat, ut ullamcorper urna egestas. Sed ac ex sit amet odio dapibus tempor sed eget sapien. Cras eget consequat leo, a hendrerit sapien. Phasellus congue, odio nec fringilla aliquet, elit nisi ullamcorper ex, vel egestas neque purus ac dui. Donec dignissim magna id dui lobortis tempus. Mauris pharetra urna mi, sed euismod massa lobortis et. Vivamus at maximus augue. Etiam pellentesque leo id lorem ultrices ultrices. Etiam tempor laoreet fringilla. Morbi sed hendrerit nisi, ac facilisis purus. Nulla vel libero nec urna ullamcorper dapibus. Sed auctor varius eros sed malesuada. Vivamus purus urna, convallis sed velit eu, auctor ultricies turpis. Donec quis varius magna.\n\nPraesent blandit ultrices nibh, eget iaculis velit finibus vel. Mauris ligula neque, posuere et mauris non, feugiat condimentum turpis. Donec et vulputate lectus, nec tempor erat. Mauris dapibus libero tortor, quis bibendum tortor facilisis non. Nullam malesuada rutrum metus non posuere. Pellentesque massa metus, elementum in condimentum sit amet, convallis tempor leo. Nullam ultrices elementum neque, ac congue lectus rutrum in. Sed vel orci maximus, interdum justo auctor, posuere lacus. Maecenas ut purus nec augue placerat viverra. Suspendisse malesuada nunc est, vel auctor arcu molestie suscipit. Quisque bibendum egestas ipsum, sagittis molestie lorem pretium sit amet. In hac habitasse platea dictumst. Suspendisse justo elit, faucibus eu vestibulum nec, gravida id massa.")

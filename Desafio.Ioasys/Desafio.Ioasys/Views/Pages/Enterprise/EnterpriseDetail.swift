@@ -23,7 +23,7 @@ struct EnterpriseDetail: View {
     
     var body: some View {
         ScrollView {
-            VStack {
+            VStack(alignment: .leading) {
                 URLImage(imageUrl,
                          placeholder: {
                             ProgressView($0) { progress in
@@ -51,6 +51,7 @@ struct EnterpriseDetail: View {
                                 .clipped()
                           }
                     .frame(height: 200)
+                    .padding(.top)
                 
                 if let description = enterprise.description {
                     Text(description)
